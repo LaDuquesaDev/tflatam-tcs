@@ -19,7 +19,7 @@ function App() {
           <Route path="/Profile" element={<Profile />} />
           {/* <Route path="/chef" element={<Chef />} />
           <Route path="/boss" element={<Administrator />} /> */}
-          <Route path="*" element={<NotFoundPage />} />
+          {/* <Route path="*" element={<NotFoundPage />} /> */}
 
         </Routes>
       </BrowserRouter>
