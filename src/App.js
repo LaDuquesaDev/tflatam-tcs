@@ -5,6 +5,7 @@ import RouterMap from './views/RouteMap';
 import Start from './views/Start'
 import PassengerComments from './views/PassengerComents';
 import DriverComments from './views/DriverComments';
+import Profile from './views/Profile';
 import {
   BrowserRouter,
   Routes,
@@ -22,6 +23,7 @@ function App() {
           <Route path="/DriverComments" element={<DriverComments />} />
           <Route path="" element={<Login />} />
           <Route path="/Home" element={<Home />} />
+          <Route path="/Profile" element={<Profile />} />
           <Route path="/comments" element={<Comments />} />
           <Route path="/RouterMap" element={<RouterMap />} />
           <Route path="/Start" element={<Start />} />
