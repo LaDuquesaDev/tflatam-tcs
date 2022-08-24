@@ -1,11 +1,13 @@
 // import React from 'react';
 import driver from '../images/driverdary.png'
 import { Icon } from '@iconify/react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const DriverComments = () => {
     return (
         <>
-            <h2>header</h2>
+            <Header/>
             <section className='driverComments-container'>
                 <section className='driverTitle-container'>
                     <img className='photo-driver' src={driver} alt='driver' />
@@ -39,6 +41,7 @@ const DriverComments = () => {
                     </section>
                 </section>
             </section>
+            <Footer/>
         </>
     )
 }

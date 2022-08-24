@@ -1,11 +1,13 @@
 // import React from 'react';
 import passenger from '../images/passengerdani.png'
 import { Icon } from '@iconify/react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const PassengerComments = () => {
     return (
         <>
-            <h2>header</h2>
+            <Header/>
             <section className='passengerComments-container'>
                 <section className='passengerTitle-container'>
                     <img className='photo-passenger' src={passenger} alt='passenger' />
@@ -40,6 +42,7 @@ const PassengerComments = () => {
                 </section>
 
             </section>
+            <Footer/>
         </>
     )
 }

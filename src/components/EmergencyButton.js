@@ -81,7 +81,7 @@ const EmergencyButton = (args) => {
                     <p>Si no hay descripción sobre la emergencia, se considerará de alto riesgo</p>
                     <div>
                         <img className="" src={timer} alt='temporizador'></img>
-                        <Countdown date={Date.now() + 2000} renderer={renderer} />
+                        <Countdown date={Date.now() + 15000} renderer={renderer} />
                     </div>
                 </ModalBody>
                 <ModalFooter>

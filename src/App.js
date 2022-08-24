@@ -25,7 +25,7 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/comments" element={<Comments />} />
-          <Route path="/RouterMap" element={<RouterMap />} />
+          <Route path="/RouteMap" element={<RouterMap />} />
           <Route path="/Start" element={<Start />} />
         </Routes>
       </BrowserRouter>
