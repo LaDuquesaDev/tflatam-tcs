@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconify/json": "^2.1.97",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "google-map-react": "^2.2.0",
     "bootstrap": "^5.2.0",
     "dayjs": "^1.11.5",
     "firebase": "^9.9.3",
@@ -41,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@iconify/react": "^3.2.2"
   }
 }
