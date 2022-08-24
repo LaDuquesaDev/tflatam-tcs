@@ -2,7 +2,9 @@ import React from 'react'
 import { useNavigate, Link } from "react-router-dom";
 import logo from '../images/logo.svg';
 import email from '../images/email.svg';
-import password from '../images/password.svg';
+import password from '../images/password.svg';  
+import up from '../images/up.svg';
+import down from '../images/down.svg';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -12,6 +14,7 @@ const Login = () => {
 
   return (
     <div className="container-login">
+      <img className="" id='view-logo' src={up} alt='Logo'></img>
       <img className="logo" id='view-logo' src={logo} alt='Logo'></img>
       <form className="form-login">
         <label>
@@ -22,11 +25,12 @@ const Login = () => {
           <img className="password" id='view-logo' src={password} alt='contraseña'></img>
           <input type="password" name="name" className="inputs" placeholder="Contraseña"/>
         </label>
-        <Link to='#'>Olvidaste tu contraseña?</Link>
+        <Link className="forgot-password" to='#'>Olvidaste tu contraseña?</Link>
         <button className="sign-in" type="submit" onClick={handleClick}>Iniciar Sesión</button>
-        <p>No eres miembro?</p>
-        <Link to='/Register'>Registrate ahora</Link>
+        {/* <p>No eres miembro?</p>
+        <Link to='/Register'>Registrate ahora</Link> */}
       </form>
+      <img className="" id='view-logo' src={down} alt='Logo'></img>
     </div>
   )
 }
