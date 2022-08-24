@@ -10,7 +10,7 @@ import down from '../images/down.svg';
 const Login = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/Profile")
+    navigate("/Routermap")
   }
 
   return (
@@ -28,8 +28,6 @@ const Login = () => {
         </label>
         <Link className="forgot-password" to='#'>Olvidaste tu contraseña?</Link>
         <button className="sign-in" type="submit" onClick={handleClick}>Iniciar Sesión</button>
-        {/* <p>No eres miembro?</p>
-        <Link to='/Register'>Registrate ahora</Link> */}
       </form>
       <img className="" id='view-logo' src={down} alt='Logo'></img>
     </div>
