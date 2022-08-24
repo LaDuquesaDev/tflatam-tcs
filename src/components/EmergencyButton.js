@@ -29,9 +29,6 @@ const EmergencyButton = (args) => {
             //     center top
             //     no-repeat
             //     `
-        
-      
-
         });
     }
 
