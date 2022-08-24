@@ -2,6 +2,8 @@ import './App.css';
 import Login from './views/Login';
 import Register from './views/Register';
 import Profile from './views/Profile';
+import RouterMap from './views/RouteMap';
+import Start from './views/Start'
 import NotFoundPage from './views/NotFoundPage';
 import {
   BrowserRouter,
@@ -17,8 +19,8 @@ function App() {
           <Route path="" element={<Login />} />
           <Route path="/Register" element={<Register />} />
           <Route path="/Profile" element={<Profile />} />
-          {/* <Route path="/chef" element={<Chef />} />
-          <Route path="/boss" element={<Administrator />} /> */}
+          <Route path="/RouterMap" element={<RouterMap />} />
+          <Route path="/Start" element={<Start />} />
           <Route path="*" element={<NotFoundPage />} />
 
         </Routes>
