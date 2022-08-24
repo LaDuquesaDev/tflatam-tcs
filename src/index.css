@@ -60,7 +60,6 @@ body {
 }
 
 .form-login {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: 1fr;
   width: 20em;
