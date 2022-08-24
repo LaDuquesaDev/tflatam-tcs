@@ -7,7 +7,204 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+/* AQUI ESTAN LAS FUENTES */
+
+@font-face {
+  font-family: calibriBold;
+  src: url('./fonts/calibribold.ttf');
+}
+
+@font-face {
+  font-family: calibriRegular;
+  src: url('./fonts/calibri.ttf');
+}
+
+@font-face {
+  font-family: calibriLight;
+  src: url('./fonts/calibrilight.ttf');
+}
+
+@font-face {
+  font-family: houschkaDemibold;
+  src: url('./fonts/HouschkaRoundedDemiBold.ttf');
+}
+
+@font-face {
+  font-family: houschkaMedium;
+  src: url('./fonts/HouschkaRoundedAltMedium.ttf');
+}
+
+@font-face {
+  font-family: houschkaLight;
+  src: url('./fonts/HouschkaRoundedAltLight.ttf');
+}
+
+.logo {
+  width: 24em;
+  height: 7em;
+  /* border: 1px solid blue; */
+}
+
+.container-login {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  align-content: space-evenly;
+}
+
+.form-login {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 20em;
+  height: 18em;
+}
+
+.sign-in {
+  border-radius: 1.5em;
+  background: rgba(236, 30, 133, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.inputs {
+  /* border: 0; */
+  border-top: 1em;
+  border-left: 1em;
+  border-right: 1em;
+  width: 17em;
+  padding-top: 2em;
+  margin-left: 1em;
+}
+
+.forgot-password{
+  text-decoration: none;
+  color: rgba(128, 118, 118, 1);
+}
+
+.comments-accordion{
+  width: 20em;
+}
+
+.comments-faces{
+  border-radius: 50%;
+  border: none;
+}
+
+.comments-principal{
+  display: flex;
+  justify-content: center;
+}
+
+.comments-button{
+  background: rgba(78, 152, 192, 1);
+  border-radius: 10px;
+  border: none;
+  width: 12em;
+  margin-top: 1.5em;
+}
+
+.buttonPrincipal-emergency{
+  background: white;
+}
+
+/* .emergency-modal{
+  display: flex;  
+} */
+
+.emergency-types{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.types{
+  width: 4em;
+  height: 4em;
+}
+
+/* AQUI ESTAN LOS ESTILOS DE LA VISTA DE RECONOCIMIENTOS A PASAJEROS */
+
+.photo-passenger,
+.photo-driver {
+
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 21px;
+  top: 60px;
+}
+
+.passenger-name,
+.driver-name {
+  position: absolute;
+  left: 122px;
+  top: 75px;
+  font-size: 20px;
+  font-family: houschkaDemibold, sans-serif;
+  color: #5B6063;
+}
+
+.passenger-type,
+.driver-type {
+  position: absolute;
+  left: 122px;
+  top: 95px;
+  font-family: houschkaMedium, sans-serif;
+  font-size: 18px;
+  color: #5B6063;
+}
+
+.passenger-stars,
+.driver-stars {
+  position: absolute;
+  left: 122px;
+  top: 115px;
+  font-size: 23px;
+}
+
+.passengerText-container,
+.driverText-container {
+  position: absolute;
+  width: 313px;
+  height: 404px;
+  left: 37px;
+  top: 171px;
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.title-recognition {
+  left: 91px;
+  top: 20px;
+  font-family: calibriBold, sans-serif;
+  font-size: 25px;
+  color: #5B6063;
+}
+
+.comment {
+  display: flex;
+  color: #5B6063;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.comment p {
+  margin: 0;
+  font-family: calibriRegular, sans-serif;
+  font-size: 19px;
+  color: #5B6063;
 }
