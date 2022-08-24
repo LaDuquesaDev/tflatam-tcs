@@ -2,7 +2,7 @@ import './App.css';
 import Login from './views/Login';
 import Register from './views/Register';
 import Profile from './views/Profile';
-import NotFoundPage from './views/NotFoundPage';
+// import NotFoundPage from './views/NotFoundPage';
 import {
   BrowserRouter,
   Routes,

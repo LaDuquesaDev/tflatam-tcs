@@ -4,7 +4,7 @@ import Map from "../components/Map";
 export default function Profile() {
   return (
     <div>
-      {/* <h1>Hola Mundo</h1> */}
+      <h1>¿A donde vas?</h1>
       <Map />
     </div>
     )
