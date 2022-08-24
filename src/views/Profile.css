@@ -1,0 +1,68 @@
+.profile-group {
+  width: 100vw;
+  position: absolute;
+  top: 11%;
+  text-align: center;
+}
+
+.profile-icon {
+  width: 10%;
+}
+
+.profile-h1 {
+  font-size: large;
+}
+
+.profile-tabs {
+  display: block;
+  padding: 2% 7%;
+}
+
+.profile-personal,
+.profile-contacts,
+.profile-trips {
+  display: flex;
+  flex-direction: column;
+  border: solid 2px rgb(213, 213, 213);
+  padding: 3% 9%;
+}
+
+.profile-label {
+  align-self: flex-start;
+  color: rgb(126, 126, 126);
+}
+
+.profile-input {
+  border: none;
+  border-bottom: solid 1px rgb(171, 171, 171);
+  margin-bottom: 3%;
+}
+
+.profile-tab {
+  background-color: red;
+  color: #635E5E;
+}
+
+.select-group {
+  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.profile-h3{
+  font-size: medium;
+  align-self: flex-start;
+  color: rgb(126, 126, 126);
+}
+
+.profile-tip-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.destination{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

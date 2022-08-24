@@ -1,0 +1,53 @@
+.footer-group .header-group {
+  width: 100vw;
+  height: 100vh;
+}
+
+.gradient {
+  width: 100vw;
+  height: 18vh;
+  position: fixed;
+  z-index: 1;
+}
+
+.footer {
+  bottom: 0;
+  left: -1px;
+}
+
+.header {
+  width: 105vw;
+  top: -1px;
+  left: -1px;
+}
+
+.footer-icon {
+  width: 9%;
+}
+
+.footer-icons {
+  width: 89%;
+  margin-left: 6%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  position: fixed;
+  bottom: 3%;
+}
+
+.header-icons {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  margin: 0 5%;
+  z-index: 10;
+  top: 2%;
+}
+
+.header-icon{
+  height: 46px;
+}
+.header-logout{
+  height: 30px;
+}

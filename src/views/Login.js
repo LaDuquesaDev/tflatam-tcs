@@ -6,6 +6,7 @@ import password from '../images/password.svg';
 import up from '../images/up.svg';
 import down from '../images/down.svg';
 
+
 const Login = () => {
   const navigate = useNavigate();
   const handleClick = () => {

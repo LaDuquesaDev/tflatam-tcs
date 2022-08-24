@@ -7,5 +7,5 @@ export default function Home() {
       <h1>¿A donde vas?</h1>
       <Map />
     </div>
-    )
+  )
 }
