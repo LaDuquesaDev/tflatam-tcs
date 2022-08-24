@@ -1,6 +1,6 @@
 import './App.css';
 import Login from './views/Login';
-import Profile from './views/Profile';
+import Home from './views/Home';
 import RouterMap from './views/RouteMap';
 import Start from './views/Start'
 import PassengerComments from './views/PassengerComents';
@@ -21,9 +21,8 @@ function App() {
           <Route path="/PassengerComments" element={<PassengerComments />} />
           <Route path="/DriverComments" element={<DriverComments />} />
           <Route path="" element={<Login />} />
-          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/comments" element={<Comments />} />
-          <Route path="/Profile" element={<Profile />} />
           <Route path="/RouterMap" element={<RouterMap />} />
           <Route path="/Start" element={<Start />} />
         </Routes>
