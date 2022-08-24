@@ -46,7 +46,7 @@ body {
 .logo {
   width: 24em;
   height: 7em;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .container-login {
@@ -64,15 +64,16 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   width: 20em;
-  height: 20em;
+  height: 18em;
 }
 
 .sign-in {
   border-radius: 1.5em;
-  background: rgba(209, 49, 102, 1);
+  background: rgba(236, 30, 133, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: bold;
   outline: none;
+  border: none;
 }
 
 .inputs {
@@ -80,8 +81,56 @@ body {
   border-top: 1em;
   border-left: 1em;
   border-right: 1em;
-  width: 18em;
+  width: 17em;
   padding-top: 2em;
+  margin-left: 1em;
+}
+
+.forgot-password{
+  text-decoration: none;
+  color: rgba(128, 118, 118, 1);
+}
+
+.comments-accordion{
+  width: 20em;
+}
+
+.comments-faces{
+  border-radius: 50%;
+  border: none;
+}
+
+.comments-principal{
+  display: flex;
+  justify-content: center;
+}
+
+.comments-button{
+  background: rgba(78, 152, 192, 1);
+  border-radius: 10px;
+  border: none;
+  width: 12em;
+  margin-top: 1.5em;
+}
+
+.buttonPrincipal-emergency{
+  background: white;
+}
+
+/* .emergency-modal{
+  display: flex;  
+} */
+
+.emergency-types{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.types{
+  width: 4em;
+  height: 4em;
 }
 
 /* AQUI ESTAN LOS ESTILOS DE LA VISTA DE RECONOCIMIENTOS A PASAJEROS */

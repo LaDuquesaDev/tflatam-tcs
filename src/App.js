@@ -10,6 +10,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { Comments } from './views/Comments';
+
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/PassengerComments" element={<PassengerComments />} />
           <Route path="/DriverComments" element={<DriverComments />} />
           <Route path="" element={<Login />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/comments" element={<Comments />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/RouterMap" element={<RouterMap />} />
           <Route path="/Start" element={<Start />} />
