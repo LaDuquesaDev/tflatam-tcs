@@ -1,0 +1,18 @@
+.full-list{
+    margin-top:80px;
+    }
+    
+    
+    .car-list{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    
+    }
+    
+    
+    
+    h1{
+        color:#204F90;
+        font-size:20px;
+    }
