@@ -2,6 +2,7 @@ import star from '../images/star.svg';
 import AccordionC from '../components/AccordionC';
 import EmergencyButton from '../components/EmergencyButton';
 
+
 export const Comments = () => {
     return (
         <div className='comments-principal'>

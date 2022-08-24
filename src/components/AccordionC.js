@@ -1,6 +1,6 @@
 import dislike from '../images/dislike.svg';
-import so from '../images/so-so.png';
-import good from '../images/good.png';
+import so from '../images/so-so.svg';
+import good from '../images/good.svg';
 import perfect from '../images/perfect.svg';
 import CheckboxC from '../components/CheckboxC';
 import React, { useState } from 'react';

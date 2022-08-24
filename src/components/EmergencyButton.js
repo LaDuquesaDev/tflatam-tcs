@@ -3,13 +3,48 @@ import emergency from '../images/emergency.svg';
 import accident from '../images/accident.svg';
 import stole from '../images/stole.svg';
 import technical from '../images/technical.svg';
+import call from '../images/call.gif';
+import Countdown from 'react-countdown';
+import timer from '../images/timer.svg';
+import Swal from 'sweetalert2'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Label, Input } from 'reactstrap';
 
 const EmergencyButton = (args) => {
 
     const [modal, setModal] = useState(false);
-
     const toggle = () => setModal(!modal);
+
+    const Completionist = () => {
+        setModal(false);
+        Swal.fire({
+            title: "Se ha enviado un mensaje de alerta a tus contactos de emergencia",
+            icon: 'success',
+            width: 600,
+            imageUrl: call, 
+            showConfirmButton: false,
+            timer: 2000,
+            // backdrop: `
+            //     rgba(0,0,123,0.4)
+            //     url("call")
+            //     center top
+            //     no-repeat
+            //     `
+        
+      
+
+        });
+    }
+
+    // Renderer callback with condition
+    const renderer = ({ minutes, seconds, completed }) => {
+        if (completed) {
+            // Render a completed state
+            return <Completionist />;
+        } else {
+            // Render a countdown
+            return <span>{minutes}:{seconds}</span>;
+        }
+    };
     return (
         <div>
             <div className='buttonPrincipal-emergency'>
@@ -47,10 +82,14 @@ const EmergencyButton = (args) => {
                         />
                     </FormGroup>
                     <p>Si no hay descripción sobre la emergencia, se considerará de alto riesgo</p>
+                    <div>
+                        <img className="" src={timer} alt='temporizador'></img>
+                        <Countdown date={Date.now() + 2000} renderer={renderer} />
+                    </div>
                 </ModalBody>
                 <ModalFooter>
                     <Button onClick={toggle}>
-                       Enviar
+                        Enviar
                     </Button>{' '}
                     {/* <Button color="secondary" onClick={toggle}>
                         Cancel
