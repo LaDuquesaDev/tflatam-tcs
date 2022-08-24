@@ -1,0 +1,36 @@
+.routeHeader{
+    background-color: #5b3583f3;
+    padding: 1em;
+}
+
+.routeHi{
+    margin-top: 10%;
+    text-align: left;
+    line-height: 0%;
+    
+}
+
+.imgprofile{
+  margin-top: -1.5em;
+  margin-left: 1em;
+  float: left;
+
+}
+
+
+.containerDirection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10%;
+    width: 100%;
+
+} 
+
+ .form-select{
+    float: right;
+    margin-top: 1%;
+    border: solid palevioletred;
+    width: 10em;
+    margin-top: 5%;
+}
