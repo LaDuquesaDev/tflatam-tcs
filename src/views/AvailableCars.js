@@ -1,5 +1,5 @@
 import React from 'react'
-import Car from '../images/Car.svg'
+import Car from '../images/car.svg'
 import Daniela from '../images/passengerdani.png'
 import Dariana from '../images/imageperfil.png'
 import Angie from '../images/Angie.png'

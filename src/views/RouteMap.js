@@ -7,7 +7,7 @@ export default function RouteMap() {
 
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate("/available")
+        navigate("/AvailableCars")
     }
     return (
         <div className='routeMap'>
