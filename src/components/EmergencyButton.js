@@ -50,18 +50,18 @@ const EmergencyButton = (args) => {
     };
 
     return (
-        <div>
+        <div className='emergencyButton'>
             <div className='buttonPrincipal-emergency'>
                 <Button className='btnSos' color="white" onClick={toggle}>
                     <img className="" src={emergency} alt='Botón de emergencia'></img>
                     <p>S.O.S</p>
                 </Button>
             </div>
-            <Modal className="emergency-modal" isOpen={modal} toggle={toggle} {...args}>
+            <Modal className="emergency-modal" isOpen={modal} toggle={toggle} {...args} centered>
                 <ModalHeader toggle={toggle}>BOTÓN DE EMERGENCIA</ModalHeader>
                 <ModalBody>
                     <div className='emergency-types'>
-                        <div>
+                        <div className='emergency-option'>
                             <img className="types" src={accident} alt='Accidente'></img>
                             <p>Accidente</p>
                         </div>
@@ -86,7 +86,8 @@ const EmergencyButton = (args) => {
                             onChange={() => setRunTimmer(false)}
                         />
                     </FormGroup>
-                    <p>Si no hay descripción sobre la emergencia, se considerará de alto riesgo</p>
+                    <p className='EmergencyDescription'>Si no hay descripción sobre la emergencia,</p>
+                    <p className='EmergencyDescription'>se considerará de alto riesgo</p>
                     <div>
                         <img className="" src={timer} alt='temporizador'></img>
                         {runTimmer && <Countdown date={Date.now() + 10000} renderer={renderer} />}

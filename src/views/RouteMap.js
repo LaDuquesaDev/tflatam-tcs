@@ -1,11 +1,13 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import navRouteMap from '../images/navRouteMap.svg';
+import Map from "../components/Map";
 import './RouteMap.css'
 import Header from '../components/Header';
 import MapConRuta from '../components/MapConRuta';
 import { useState } from 'react';
 import { useGoogleMap } from '@react-google-maps/api'
+
 
 export default function RouteMap() {
     const [originIndexSelected, setOriginIndexSelected] = useState(0);
@@ -37,10 +39,15 @@ export default function RouteMap() {
         longDest = coordinatesDestino[destIndexSelected][1];
     }
 
+
+export default function RouteMap() {
+   
+    // const [directions, setDirections] = useState(false);
     const navigate = useNavigate();
     const handleClick = () => {
         navigate("/AvailableCars")
     }
+
 
     const onChangeOrg = (event) => {
         const index = event.target.value;
@@ -52,6 +59,7 @@ export default function RouteMap() {
         const index = event.target.value;
         setDestIndexSelected(parseInt(index));
     }
+
     return (
         <div className='routeMap'>
             <div className='routeHeader'>
@@ -67,22 +75,29 @@ export default function RouteMap() {
             <div className='containerDirection'>
                 <div className='containerSince'>
                     <label for="form-select">Desde:</label>
+
                     <select class="form-select" aria-label="Default select example" onChange={onChangeOrg}>
                         <option selected></option>
                         <option value="1">Casa 1</option>
                         <option value="2">Casa 2</option>
                         <option value="3">Casa 3</option>
+
                     </select>
                 </div>
                 <div className='containerUntil'>
                     <label for="form-select">Hasta:</label>
+
                     <select class="form-select" aria-label="Default select example" onChange={onChangeDest}>
                         <option selected></option>
                         <option value="1">Trabajo</option>
                         <option value="2">Two</option>
+
                     </select>
                 </div>
-                <button className="router-sign" onClick={handleClick}>Pide ahora</button>
+                <button className="sign-in" onClick={handleClick}>Pide ahora</button>  
+            </div>
+            <div>
+                <Map />
             </div>
             {(latOrg == null || latDest != null) ? <div className="mapa-route"><MapConRuta latitudeOrigin={latOrg} longitudeOrigin={longOrg} latitudeDest={latDest} longituideDest={longDest} ></MapConRuta></div> : <div><MapConRuta></MapConRuta></div>}
         </div >
