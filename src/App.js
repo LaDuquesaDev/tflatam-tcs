@@ -11,6 +11,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import AvailableCars from './views/AvailableCars'
 import { Comments } from './views/Comments';
 
 
@@ -25,7 +26,8 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/comments" element={<Comments />} />
-          <Route path="/RouteMap" element={<RouterMap />} />
+          <Route path="/RouterMap" element={<RouterMap />} />
+          <Route path="/AvailableCars" element={<AvailableCars />} />
           <Route path="/Start" element={<Start />} />
         </Routes>
       </BrowserRouter>
