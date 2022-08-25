@@ -3,25 +3,31 @@
     display:flex;
     flex-direction:row;
     justify-content: space-evenly;
-    margin:15px;
+    margin:10px;
     text-align: center;
     align-items:center;
     font-size:15px;
+    font-weight: 600;
   
+  }
+
+  .user-info{
+    display:flex;
+    flex-direction:column;
   }
   
   .free-places-text{
     color: #683686;
     font-weight:500;
     padding-top:14px;
-    font-size:12px;
+    font-size:15px;
     width:50px;
   }
   .show-more{
     font-weight:500;
     color:#519CC1;
     padding-top:14px;
-    font-size:12px;
+    font-size:15px;
   }
   
   .avatar-img{

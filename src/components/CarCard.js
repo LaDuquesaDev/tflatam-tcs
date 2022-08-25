@@ -13,7 +13,7 @@ const CarCard = (props) => {
     return (
         <div className="car-card">
 
-            <div className="user-info"><img src={image} className="avatar-img" alt="User" /> {name}</div>
+            <div className="user-info"><div><img src={image} className="avatar-img" alt="User" /></div> {name}</div>
             <p className="free-places-text">{freePlaces} lugares
                 disponible</p>
             <div className="show-more"><p>Ver más</p></div>
@@ -21,7 +21,7 @@ const CarCard = (props) => {
 
             <Popup
                 trigger={<div className="join-button">
-                    <img src={Join} className="JoinButton" alt="JoinButton" />
+                    <img src={Join} className="JoinButton" alt="JoinButton" width="100" height="90" />
                 </div>}
                 modal
                 nested

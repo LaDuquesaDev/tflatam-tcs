@@ -7,10 +7,10 @@ import Footer from '../components/Footer';
 const DriverComments = () => {
     return (
         <>
-            <Header/>
+            <Header />
             <section className='driverComments-container'>
                 <section className='driverTitle-container'>
-                    <img className='photo-driver' src={driver} alt='driver' />
+                    <img className='photo-driver' src={driver} style={{ zIndex: "10" }} alt='driver' />
                     <h3 className='driver-name'>Dariana Quintero</h3>
                     <p className='driver-type'>Conductora</p>
                     <section className='driver-stars'>
@@ -41,7 +41,7 @@ const DriverComments = () => {
                     </section>
                 </section>
             </section>
-            <Footer/>
+            <Footer />
         </>
     )
 }
