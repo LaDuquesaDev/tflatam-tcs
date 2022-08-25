@@ -1,8 +1,3 @@
-.routeHeader{
-    background-color: #5b3583f3;
-    padding: 1em;
-}
-
 .routeHi{
     margin-top: 10%;
     text-align: left;
@@ -34,3 +29,21 @@
     width: 10em;
     margin-top: 5%;
 }
+
+.route-icons {
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin: 0 5%;
+    z-index: 10;
+    top: 2%;
+  }
+  
+  .routeLogo{
+    height: 40px;
+  }
+
+  .routeExit{
+    height: 30px;
+  }
