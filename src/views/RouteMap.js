@@ -1,19 +1,23 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
+import navRouteMap from '../images/navRouteMap.svg';
 import './RouteMap.css'
 
 export default function RouteMap() {
 
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate("/available")
+        navigate("/AvailableCars")
     }
     return (
         <div className='routeMap'>
             <div className='routeHeader'>
                 <header>
-                    <img className="routeLogo" id='Route-logo' src={require('../images/logopque.png')} alt='Logo'></img>
-                    <img className="route-exit" id='Route-exit' src={require('../images/humbleicons_logout.png')} alt='exit'></img>
+                    <img className="" id='view-logo' src={navRouteMap} alt='nav'></img>
+                    <div className="route-icons">
+                        <img className="routeLogo" id='Route-logo' src={require('../images/logopque.png')} alt='Logo'></img>
+                        <img className="routeExit" id='Route-exit' src={require('../images/humbleicons_logout.png')} alt='exit'></img>
+                    </div>
                 </header>
             </div>
             <img className="imgprofile" id='imgProfile' src={require('../images/imageperfil.png')} alt='Logo'></img>

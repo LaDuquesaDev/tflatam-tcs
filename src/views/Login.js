@@ -15,8 +15,8 @@ const Login = () => {
 
   return (
     <div className="container-login">
-      <img className="" id='view-logo' src={up} alt='Logo'></img>
-      <img className="logo" id='view-logo' src={logo} alt='Logo'></img>
+      <img className="" src={up} alt='Logo'></img>
+      <img className="logo"  src={logo} alt='Logo'></img>
       <form className="form-login">
         <label>
           <img className="email" id='view-logo' src={email} alt='correo'></img>
