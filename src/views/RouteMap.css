@@ -1,49 +1,135 @@
+/* AQUI ESTA ROUTERMAP */
+/* .view-logo {
+  position: absolute;
+  width: 390px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+} */
+
+.routeMap{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 21px;
+}
+
+/* .routeHeader{
+  margin-top: -251px;
+} */
+
+.imgprofile {
+ /*  position: absolute; */
+  width: 59px;
+  height: 59px;
+/*   left: 19px;
+  top: 60px; */
+  border: 3px solid #ffffff;
+  border-radius: 56px;
+}
+
 .routeHi{
-    margin-top: 10%;
-    text-align: left;
-    line-height: 0%;
-    
+  display: flex;
+  position: absolute;
+  left: 39%;
+  top: 11%;
 }
 
-.imgprofile{
-  margin-top: -1.5em;
-  margin-left: 1em;
-  float: left;
-
+.routeHi p {
+ /*  position: absolute;
+  left: 95px;
+  top: 89px; */
+  font-family: houschkaDemibold, sans-serif;
+  font-size: 18px;
+  color: #D13166;
 }
 
+.routeHi h2 {
+ /*  position: absolute;
+  left: 95px;
+  top: 112px; */
+  font-family: houschkaDemibold, sans-serif;
+  font-size: 27px;
+  color: #D13166;
+}
 
-.containerDirection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10%;
-    width: 100%;
+.containerDirection {
+/*   display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: space-evenly;
+  width: 20em;
+  height: 18em;
+  border-radius: 20px;
+  width: 100%;
+  width: 315px;
+  height: 163px;
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
 
-} 
+.containerSince,
+.containerUntil{
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-family: calibriBold, sans-serif;
+  width: 235px;
+}
 
- .form-select{
-    float: right;
-    margin-top: 1%;
-    border: solid palevioletred;
-    width: 10em;
-    margin-top: 5%;
+.router-sign{
+  width: 125px;
+  border-radius: 1.5em;
+  background: #EC1E85;
+  color: #ffffff;
+  font-family: calibriBold, sans-serif;
+  font-size: 18px;
+  border: none;
+}
+
+.form-select {
+  float: right;
+  margin-top: 1%;
+  border: solid palevioletred;
+  width: 10em;
+  margin-top: 5%;
 }
 
 .route-icons {
-    width: 92%;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    margin: 0 5%;
-    z-index: 10;
-    top: 2%;
-  }
-  
-  .routeLogo{
-    height: 40px;
-  }
+  width: 95%;
+  display: flex;
+  /* display: grid; */
+  /* grid-template-columns: 1fr; */
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  margin: -63px 10px 0;
+}
 
-  .routeExit{
-    height: 30px;
-  }
+.routeLogo {
+/*   position: absolute;
+  width: 58px;
+  height: 40px;
+  left: 308px;
+  top: 33px; */
+}
+
+.routeExit {
+ /*  position: absolute;
+  width: 29px;
+  height: 29px;
+  right: 313px;
+  top: 40px; */
+
+}
