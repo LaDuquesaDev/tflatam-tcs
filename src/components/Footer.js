@@ -29,6 +29,7 @@ function Footer() {
           className='footer-icon'
           alt='ranking icon'
           src={require('../images/ranking.png')}
+          onClick={()=>navigate('/Ranking')}
         />
       </div>
     </div>

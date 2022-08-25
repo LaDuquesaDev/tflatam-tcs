@@ -78,18 +78,13 @@
 }
 
 .profile-ul{
-  align-self: flex-start;
-  list-style-type: circle;
+  display: flex;
+  flex-direction: column;
 }
 .profile-li{
-  display: flex;
-  list-style-type: circle;
+  align-self: flex-start;
 }
 .profile-btn{
-  background-color: #C525A2;
-  color: white;
-  border: none;
-  border-radius: 50%;
   width: 25px;
   height: 25px;
   text-align: center;

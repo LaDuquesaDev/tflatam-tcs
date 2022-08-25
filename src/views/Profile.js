@@ -141,13 +141,13 @@ export default function Profile() {
                 <p className='profile-label'>Destinos:</p>
                 <ul className='profile-ul'>
                   <li className='profile-li'>
-                    <div className='profile-ul'>
+                    <div className='profile-li'>
                       <label for="destination-home" className='profile-label'>Casa: </label>
                       <input className='profile-input' type="text" id="destination-home" name="home" value='Calle 15 - Zona Sur' />
                     </div>
                   </li>
                   <li className='profile-li'>
-                    <div className='profile-ul'>
+                    <div className='profile-li'>
                       <label for="destination-work" className='profile-label'>Trabajo: </label>
                       <select name='destination-work' id='destination-work' >
                         <option value='tcs1'>TCS-1</option>
@@ -156,7 +156,11 @@ export default function Profile() {
                     </div>
                   </li>
                   <li className='profile-li'>
-                    <button className='profile-btn'>+</button>
+                    <img
+                      className='profile-btn'
+                      alt='pink plus icon'
+                      src={require('../images/plus.png')}
+                    />
                   </li>
                 </ul>
               </div>
@@ -215,11 +219,19 @@ export default function Profile() {
             <div className='profile-trips'>
               <div className='profile-tip-box'>
                 <p>Rocío Gutiérrez - 23/08/22</p>
-                <button className='profile-btn'>+</button>
+                <img
+                  className='profile-btn'
+                  alt='pink plus icon'
+                  src={require('../images/plus.png')}
+                />
               </div>
               <div className='profile-tip-box'>
                 <p>Diego López - 22/08/22</p>
-                <button className='profile-btn'>+</button>
+                <img
+                  className='profile-btn'
+                  alt='pink plus icon'
+                  src={require('../images/plus.png')}
+                />
               </div>
             </div>
           </TabPane>
