@@ -4,10 +4,9 @@ import Daniela from '../images/passengerdani.png'
 import Dariana from '../images/imageperfil.png'
 import Angie from '../images/Angie.png'
 import CarCard from '../components/CarCard'
-import "./AvailableCars.css";
+import "./AvailableCars.css"
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-
 
 const AvailableCars = () => {
     return (
