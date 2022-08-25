@@ -1,5 +1,5 @@
 import AccordionC from '../components/AccordionC';
-import EmergencyButton from '../components/EmergencyButton';
+// import EmergencyButton from '../components/EmergencyButton';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import React, { useState } from 'react';
@@ -68,8 +68,7 @@ export const Comments = () => {
                     <input type="text" name="name" className='comments-description' />
                     <p className='commentsThree'>Evalúa a tus acompañantes</p>
                     <AccordionC commentsSelected={commentsSelected} setCommentsSelected={setCommentsSelected} />
-                    <button className='comments-button'>Enviar</button>
-                    <EmergencyButton />
+                    {/* <EmergencyButton /> */}
                 </section>
             </div>
             <Footer />
