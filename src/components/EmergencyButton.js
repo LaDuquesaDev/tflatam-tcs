@@ -57,7 +57,7 @@ const EmergencyButton = (args) => {
                     <p>S.O.S</p>
                 </Button>
             </div>
-            <Modal className="emergency-modal" isOpen={modal} toggle={toggle} {...args}>
+            <Modal className="emergency-modal" isOpen={modal} toggle={toggle} {...args} centered>
                 <ModalHeader toggle={toggle}>BOTÓN DE EMERGENCIA</ModalHeader>
                 <ModalBody>
                     <div className='emergency-types'>
