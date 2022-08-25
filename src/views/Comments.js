@@ -3,9 +3,12 @@ import AccordionC from '../components/AccordionC';
 import EmergencyButton from '../components/EmergencyButton';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import React, { useState } from 'react';
 
 
 export const Comments = () => {
+    const [commentsSelected, setCommentsSelected] = useState([])
+    console.log({commentsSelected})
     return (
         <div className='comments-principal'>
             <Header/>
@@ -23,9 +26,8 @@ export const Comments = () => {
                 <input type="text" name="name" className="" />
                 <EmergencyButton/>
                 <p>Evalúa a tus acompañantes</p>
-                <AccordionC/>
-                <button className='comments-button'>Enviar</button>
-                <EmergencyButton/>
+                <AccordionC setCommentsSelected={setCommentsSelected} commentsSelected={commentsSelected}/>
+                {/* <EmergencyButton/> */}
             </div>
             <Footer/>
         </div>

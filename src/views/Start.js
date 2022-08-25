@@ -1,6 +1,6 @@
 import React from 'react'
 import './Start.css'
-import car from '../images/car.svg';
+import car from '../images/Car.svg';
 export default function Start() {
   return (
     <div>
