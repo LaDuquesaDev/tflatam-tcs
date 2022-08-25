@@ -1,22 +1,22 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 
-
-
 function Map() {
-
 
   const apiIsLoaded = (map, maps) => {
     const directionsService = new window.google.maps.DirectionsService();
     const directionsRenderer = new window.google.maps.DirectionsRenderer();
     directionsRenderer.setMap(map);
-    const origin = { lat: 4.680732327568705, lng: -74.0423939104911 };
-    const destination = { lat: 4.681512920071723, lng: -74.04206131659186 };
+    const casa = { lat: 4.733580998215758, lng: -74.03514445129802 };
+    const trabajo = { lat: 4.681512920071723, lng: -74.04206131659186 };
+    // const { casa, trabajo } = options.options
+    // console.log(options.options);
+    // console.log(casa, trabajo);
 
     directionsService.route(
       {
-        origin: origin,
-        destination: destination,
+        origin: casa,
+        destination: trabajo,
         travelMode: window.google.maps.TravelMode.DRIVING,
       },
       (result, status) => {
@@ -28,6 +28,7 @@ function Map() {
       }
     );
   };
+
   return (
     <div>
       <div style={{ height: '400px', width: '100%' }}>
