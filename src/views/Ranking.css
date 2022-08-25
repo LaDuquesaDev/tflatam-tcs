@@ -15,11 +15,10 @@
 
 .ranking-h1{
   font-size: large;
-  color: black;
 }
 
 .ranking-h2{
-  font-size: large;
+  font-size: medium;
   color: gray;
   align-self: flex-start;
   margin-left: 10%;

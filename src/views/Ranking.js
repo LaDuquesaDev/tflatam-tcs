@@ -86,16 +86,16 @@ function Ranking() {
           <tbody>
             {drivers.map((driver) => (
               <tr key={driver.id} className='ranking-table'>
-                <td className='ble'>{driver.user}</td>
-                <td className='ble'>
+                <td>{driver.user}</td>
+                <td>
                   <img
                     className='chart-icon'
                     alt='pink star icon'
                     src={require('../images/pink-star.png')}
                   />
                 </td>
-                <td className='ble'>{driver.score}</td>
-                <td className='ble'>
+                <td>{driver.score}</td>
+                <td>
                   <img
                     className='chart-icon'
                     alt='pink plus icon'
@@ -113,16 +113,16 @@ function Ranking() {
           <tbody>
             {passengers.map((passenger) => (
               <tr key={passenger.id} className='ranking-table'>
-                <td className='ble'>{passenger.user}</td>
-                <td className='ble'>
+                <td>{passenger.user}</td>
+                <td>
                   <img
                     className='chart-icon'
                     alt='purple star icon'
                     src={require('../images/purple-star.png')}
                   />
                 </td>
-                <td className='ble'>{passenger.score}</td>
-                <td className='ble'>
+                <td>{passenger.score}</td>
+                <td>
                   <img
                     className='chart-icon'
                     alt='purple plus icon'
