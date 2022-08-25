@@ -69,9 +69,10 @@ export default function Profile() {
         <Nav tabs>
           <NavItem>
             <NavLink
-              style={{ 
+              style={{
                 backgroundColor: `${tabColor1}`,
-                color: `${fontColor1}` }}
+                color: `${fontColor1}`
+              }}
               className={classnames('profile-tab', {
                 active:
                   currentActiveTab === '1'
@@ -83,8 +84,10 @@ export default function Profile() {
           </NavItem>
           <NavItem>
             <NavLink
-              style={{ backgroundColor: `${tabColor2}`,
-                color: `${fontColor2}` }}
+              style={{
+                backgroundColor: `${tabColor2}`,
+                color: `${fontColor2}`
+              }}
               className={classnames('profile-tab', {
                 active:
                   currentActiveTab === '2'
@@ -96,8 +99,10 @@ export default function Profile() {
           </NavItem>
           <NavItem>
             <NavLink
-              style={{ backgroundColor: `${tabColor3}`,
-                color: `${fontColor3}` }}
+              style={{
+                backgroundColor: `${tabColor3}`,
+                color: `${fontColor3}`
+              }}
               className={classnames('profile-tab', {
                 active:
                   currentActiveTab === '3'
@@ -132,9 +137,8 @@ export default function Profile() {
                   <option value='non-binary'>No Binario</option>
                 </select>
               </div>
-
-              <p className='profile-label'>Destinos:</p>
               <div className='profile-destination'>
+                <p className='profile-label'>Destinos:</p>
                 <ul className='profile-ul'>
                   <li className='profile-li'>
                     <div className='profile-ul'>

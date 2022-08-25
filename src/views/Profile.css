@@ -59,6 +59,8 @@
 .profile-tip-box{
   display: flex;
   justify-content: space-between;
+  border-bottom: solid 1px gray;
+  margin-bottom: 5%;
 }
 
 .profile-destination{
@@ -91,5 +93,5 @@
   width: 25px;
   height: 25px;
   text-align: center;
-  text-justify: auto;
+  font-size: large;
 }
