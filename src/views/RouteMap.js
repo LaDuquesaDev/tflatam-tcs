@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import navRouteMap from '../images/navRouteMap.svg';
+import Map from "../components/Map";
 import './RouteMap.css'
 
 export default function RouteMap() {
@@ -31,20 +32,22 @@ export default function RouteMap() {
                     <label for="form-select">Desde:</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected></option>
-                        <option value="1"> Casa</option>
-                        <option value="2">Two</option>
+                        <option value="1"> Casa Cl. 139 #96a-35</option>
+                        <option value="2">Cra. 13 #153-81</option>
                     </select>
                 </div>
                 <div className='containerUntil'>
                     <label for="form-select">hasta:</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected></option>
-                        <option value="1">Trabajo</option>
-                        <option value="2">Two</option>
+                        <option value="1">TCS Ac 100#9a-45</option>
+                        <option value="2">TCS Av El dorado #73-68</option>
+                        <option value="2">TCS transporte de carga</option>
                     </select>
                 </div>
                 <button className="sign-in" onClick={handleClick}>Pide ahora</button>
             </div>
+            <Map />
 
 
         </div>

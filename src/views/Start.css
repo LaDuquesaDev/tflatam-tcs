@@ -1,4 +1,25 @@
+.startMap{
+    margin-top: 2em;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+}
 .StartFooter{
-bottom: 10%;
-position: fixed;
+    bottom: 10%;
+    position: fixed;
+    }
+    
+.starCar{
+    float: left;
+    margin-top: 0.5em;
+    margin-left: 5%;
+}
+ 
+.btnEmergency{
+    z-index: 2;
+    margin-top: -55%;
+    position: relative;
+    float: right;
+    border-radius: 12%;
+    
 }
