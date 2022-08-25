@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import navRouteMap from '../images/navRouteMap.svg';
 import './RouteMap.css'
 import Header from '../components/Header';
-import Map from '../components/Map';
+import MapConRuta from '../components/MapConRuta';
 import { useState } from 'react';
 import { useGoogleMap } from '@react-google-maps/api'
 
@@ -84,7 +84,7 @@ export default function RouteMap() {
                 </div>
                 <button className="router-sign" onClick={handleClick}>Pide ahora</button>
             </div>
-            {(latOrg == null || latDest != null) ? <div className="mapa-route"><Map latitudeOrigin={latOrg} longitudeOrigin={longOrg} latitudeDest={latDest} longituideDest={longDest} ></Map></div> : <div><Map></Map></div>}
+            {(latOrg == null || latDest != null) ? <div className="mapa-route"><MapConRuta latitudeOrigin={latOrg} longitudeOrigin={longOrg} latitudeDest={latDest} longituideDest={longDest} ></MapConRuta></div> : <div><MapConRuta></MapConRuta></div>}
         </div >
     )
 }
