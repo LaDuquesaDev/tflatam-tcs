@@ -1,17 +1,15 @@
 import React from 'react'
-import Car from '../images/Car.svg'
+import Car from '../images/car.svg'
 import Daniela from '../images/passengerdani.png'
 import Dariana from '../images/imageperfil.png'
 import Angie from '../images/Angie.png'
 import CarCard from '../components/CarCard'
 import "./AvailableCars.css"
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 const AvailableCars = () => {
     return (
         <div className="full-list">
-            <Header />
             <div className="available">
                 <h1>Autos disponibles</h1>
             </div>
@@ -22,7 +20,7 @@ const AvailableCars = () => {
                 <CarCard name="Angie" image={Angie} freePlaces={1}></CarCard>
             </div>
 
-            <Footer />
+
         </div>
 
     )

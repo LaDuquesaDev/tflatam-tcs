@@ -4,41 +4,35 @@ import accident from '../images/accident.svg';
 import stole from '../images/stole.svg';
 import technical from '../images/technical.svg';
 import call from '../images/call.gif';
-import mail from '../images/mail.gif';
 import Countdown from 'react-countdown';
 import timer from '../images/timer.svg';
 import Swal from 'sweetalert2'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, FormGroup, Label, Input } from 'reactstrap';
 
 const EmergencyButton = (args) => {
-    const [runTimmer, setRunTimmer] = useState(true)
 
     const [modal, setModal] = useState(false);
-    const toggle = () => {
-        setModal(!modal);
-       
-    }
-
-    const handleClick = () => {
-        Swal.fire({
-            title: "Se ha enviado un mensaje de alerta a tus contactos de emergencia",
-            width: 600,
-            imageUrl: mail,
-            showConfirmButton: true, 
-         })
-    }
+    const toggle = () => setModal(!modal);
 
     const Completionist = () => {
         setModal(false);
         Swal.fire({
-            title: "Se ha enviado un mensaje de alerta y esta realizando una llamada a tus contactos de emergencia",
+            title: "Se ha enviado un mensaje de alerta a tus contactos de emergencia",
+            icon: 'success',
             width: 600,
-            imageUrl: call,
+            imageUrl: call, 
             showConfirmButton: false,
-            timer: 5000,
-        })
+            timer: 2000,
+            // backdrop: `
+            //     rgba(0,0,123,0.4)
+            //     url("call")
+            //     center top
+            //     no-repeat
+            //     `
+        });
     }
 
+    // Renderer callback with condition
     const renderer = ({ minutes, seconds, completed }) => {
         if (completed) {
             // Render a completed state
@@ -48,14 +42,13 @@ const EmergencyButton = (args) => {
             return <span>{minutes}:{seconds}</span>;
         }
     };
-
     return (
         <div>
             <div className='buttonPrincipal-emergency'>
-                <Button className='btnSos' color="white" onClick={toggle}>
+                <Button color="white" onClick={toggle}>
                     <img className="" src={emergency} alt='Botón de emergencia'></img>
-                    <p>S.O.S</p>
                 </Button>
+                <p>S.O.S</p>
             </div>
             <Modal className="emergency-modal" isOpen={modal} toggle={toggle} {...args}>
                 <ModalHeader toggle={toggle}>BOTÓN DE EMERGENCIA</ModalHeader>
@@ -83,17 +76,16 @@ const EmergencyButton = (args) => {
                             id="exampleText"
                             name="text"
                             type="textarea"
-                            onChange={() => setRunTimmer(false)}
                         />
                     </FormGroup>
                     <p>Si no hay descripción sobre la emergencia, se considerará de alto riesgo</p>
                     <div>
                         <img className="" src={timer} alt='temporizador'></img>
-                        {runTimmer && <Countdown date={Date.now() + 10000} renderer={renderer} />}
+                        <Countdown date={Date.now() + 15000} renderer={renderer} />
                     </div>
                 </ModalBody>
                 <ModalFooter>
-                    <Button onClick={() => {toggle(); handleClick(); setRunTimmer(true)}}>
+                    <Button onClick={toggle}>
                         Enviar
                     </Button>{' '}
                     {/* <Button color="secondary" onClick={toggle}>

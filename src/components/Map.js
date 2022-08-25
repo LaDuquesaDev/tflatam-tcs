@@ -10,9 +10,9 @@ function Map() {
     const directionsService = new window.google.maps.DirectionsService();
     const directionsRenderer = new window.google.maps.DirectionsRenderer();
     directionsRenderer.setMap(map);
-    const origin = { lat: 4.680732327568705, lng: -74.0423939104911 };
+    const origin = { lat:   4.733580998215758, lng: -74.03514445129802 };
     const destination = { lat: 4.681512920071723, lng: -74.04206131659186 };
-
+   
     directionsService.route(
       {
         origin: origin,

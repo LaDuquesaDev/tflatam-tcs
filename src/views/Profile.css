@@ -59,34 +59,10 @@
 .profile-tip-box{
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px gray;
-  margin-bottom: 5%;
 }
 
-.profile-destination{
+.destination{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.profile-back{
-  position: fixed;
-  width: 12%;
-  left: 14px;
-  z-index: 10;
-  top: 9vh;
-}
-
-.profile-ul{
-  display: flex;
-  flex-direction: column;
-}
-.profile-li{
-  align-self: flex-start;
-}
-.profile-btn{
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  font-size: large;
 }
