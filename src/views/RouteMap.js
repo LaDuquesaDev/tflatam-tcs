@@ -1,13 +1,10 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-import navRouteMap from '../images/navRouteMap.svg';
-import Map from "../components/Map";
+// import Map from "../components/Map";
 import './RouteMap.css'
 import Header from '../components/Header';
 import MapConRuta from '../components/MapConRuta';
 import { useState } from 'react';
-import { useGoogleMap } from '@react-google-maps/api'
-
 
 export default function RouteMap() {
     const [originIndexSelected, setOriginIndexSelected] = useState(0);
@@ -40,8 +37,7 @@ export default function RouteMap() {
     }
 
 
-export default function RouteMap() {
-   
+
     // const [directions, setDirections] = useState(false);
     const navigate = useNavigate();
     const handleClick = () => {
@@ -90,16 +86,16 @@ export default function RouteMap() {
                     <select class="form-select" aria-label="Default select example" onChange={onChangeDest}>
                         <option selected></option>
                         <option value="1">Trabajo</option>
-                        <option value="2">Two</option>
+                        <option value="2">TCS2</option>
 
                     </select>
                 </div>
-                <button className="sign-in" onClick={handleClick}>Pide ahora</button>  
+                <button className="sign-in" onClick={handleClick}>Pide ahora</button>
             </div>
             <div>
-                <Map />
             </div>
             {(latOrg == null || latDest != null) ? <div className="mapa-route"><MapConRuta latitudeOrigin={latOrg} longitudeOrigin={longOrg} latitudeDest={latDest} longituideDest={longDest} ></MapConRuta></div> : <div><MapConRuta></MapConRuta></div>}
+            {/* <Map></Map> */}
         </div >
     )
 }
