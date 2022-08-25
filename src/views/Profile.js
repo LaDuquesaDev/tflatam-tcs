@@ -4,14 +4,47 @@ import classnames from 'classnames';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
 import './Profile.css';
 import Header from '../components/Header';
-// import Footer from '../components/Footer';
+import { useNavigate } from "react-router-dom";
 
 
 export default function Profile() {
 
   const [currentActiveTab, setCurrentActiveTab] = useState('1');
-  // const [tabColor, setTabColor] = useState('#D9D9D9');
-  // const [fontColor, setFontColor] = useState('#635E5E');
+
+  const navigate = useNavigate();
+
+  let tabColor1 = null;
+  let tabColor2 = null;
+  let tabColor3 = null;
+
+  let fontColor1 = null;
+  let fontColor2 = null;
+  let fontColor3 = null;
+
+  if (currentActiveTab === '1') {
+    tabColor1 = '#DC3091';
+    fontColor1 = 'white';
+  } else {
+    tabColor1 = '#D9D9D9';
+    fontColor1 = '#635E5E';
+  }
+
+  if (currentActiveTab === '2') {
+    tabColor2 = '#DC3091';
+    fontColor2 = 'white';
+  } else {
+    tabColor2 = '#D9D9D9';
+    fontColor2 = '#635E5E';
+  }
+
+  if (currentActiveTab === '3') {
+    tabColor3 = '#DC3091';
+    fontColor3 = 'white';
+  } else {
+    tabColor3 = '#D9D9D9';
+    fontColor3 = '#635E5E';
+  }
+
 
   const toggle = tab => {
     if (currentActiveTab !== tab) setCurrentActiveTab(tab);
@@ -21,8 +54,14 @@ export default function Profile() {
     <div className='profile-group'>
       <Header />
       <img
+        className='profile-back'
+        alt='back icon'
+        src={require('../images/back.png')}
+        onClick={() => navigate(-1)}
+      />
+      <img
         className='profile-icon'
-        alt='gradient header'
+        alt='profile icon'
         src={require('../images/profile-view.png')}
       />
       <h1 className='profile-h1'>Perfil</h1>
@@ -30,7 +69,10 @@ export default function Profile() {
         <Nav tabs>
           <NavItem>
             <NavLink
-              style={{ backgroundColor: '#DC3091' }}
+              style={{
+                backgroundColor: `${tabColor1}`,
+                color: `${fontColor1}`
+              }}
               className={classnames('profile-tab', {
                 active:
                   currentActiveTab === '1'
@@ -42,6 +84,10 @@ export default function Profile() {
           </NavItem>
           <NavItem>
             <NavLink
+              style={{
+                backgroundColor: `${tabColor2}`,
+                color: `${fontColor2}`
+              }}
               className={classnames('profile-tab', {
                 active:
                   currentActiveTab === '2'
@@ -53,6 +99,10 @@ export default function Profile() {
           </NavItem>
           <NavItem>
             <NavLink
+              style={{
+                backgroundColor: `${tabColor3}`,
+                color: `${fontColor3}`
+              }}
               className={classnames('profile-tab', {
                 active:
                   currentActiveTab === '3'
@@ -80,29 +130,39 @@ export default function Profile() {
               <input className='profile-input' type="text" id="mail" name="mail" value='amaya@tcs.com' />
 
               <div className='select-group'>
-                <label for="gender" className='profile-label'>Genero: </label>
+                <label for="gender" className='profile-label'>Género: </label>
                 <select name='gender' id='gender' >
                   <option value='woman'>Mujer</option>
                   <option value='men'>Hombre</option>
                   <option value='non-binary'>No Binario</option>
                 </select>
               </div>
-
-              <p className='profile-label'>Destinos:</p>
-              <div className='destination'>
-                <div>
-                  <label for="destination-home" className='profile-label'>Casa: </label>
-                  <input className='profile-input' type="text" id="destination-home" name="home" value='Calle 15 - Zona Sur' />
-
-                </div>
-                <div>
-                  <label for="destination-work" className='profile-label'>Trabajo: </label>
-                  <select name='destination-work' id='destination-work' >
-                    <option value='tcs1'>TCS-1</option>
-                    <option value='tcs2'>TCS-2</option>
-                  </select>
-                </div>
-                <button>+</button>
+              <div className='profile-destination'>
+                <p className='profile-label'>Destinos:</p>
+                <ul className='profile-ul'>
+                  <li className='profile-li'>
+                    <div className='profile-li'>
+                      <label for="destination-home" className='profile-label'>Casa: </label>
+                      <input className='profile-input' type="text" id="destination-home" name="home" value='Calle 15 - Zona Sur' />
+                    </div>
+                  </li>
+                  <li className='profile-li'>
+                    <div className='profile-li'>
+                      <label for="destination-work" className='profile-label'>Trabajo: </label>
+                      <select name='destination-work' id='destination-work' >
+                        <option value='tcs1'>TCS-1</option>
+                        <option value='tcs2'>TCS-2</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li className='profile-li'>
+                    <img
+                      className='profile-btn'
+                      alt='pink plus icon'
+                      src={require('../images/plus.png')}
+                    />
+                  </li>
+                </ul>
               </div>
 
               <div className='select-group'>
@@ -159,17 +219,24 @@ export default function Profile() {
             <div className='profile-trips'>
               <div className='profile-tip-box'>
                 <p>Rocío Gutiérrez - 23/08/22</p>
-                <button>+</button>
+                <img
+                  className='profile-btn'
+                  alt='pink plus icon'
+                  src={require('../images/plus.png')}
+                />
               </div>
               <div className='profile-tip-box'>
                 <p>Diego López - 22/08/22</p>
-                <button>+</button>
+                <img
+                  className='profile-btn'
+                  alt='pink plus icon'
+                  src={require('../images/plus.png')}
+                />
               </div>
             </div>
           </TabPane>
         </TabContent>
       </div>
-      {/* <Footer /> */}
     </div>
   )
 }

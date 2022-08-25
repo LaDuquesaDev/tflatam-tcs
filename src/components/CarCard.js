@@ -4,6 +4,8 @@ import "./CarCard.css"
 import AvailableModal from "../views/modal";
 import Popup from 'reactjs-popup'
 
+const overlayStyle = { background: 'rgba(107, 53, 134, 0.5)' };
+
 const CarCard = (props) => {
     const name = props.name;
     const image = props.image;
@@ -12,13 +14,9 @@ const CarCard = (props) => {
         <div className="car-card">
 
             <div className="user-info"><img src={image} className="avatar-img" alt="User" /> {name}</div>
-            <div className="available">
-                <p className="free-places-text">{freePlaces} lugares disponible</p>
-            </div>
-
-            <div className="show-more">
-                <p>Ver más</p>
-            </div>
+            <p className="free-places-text">{freePlaces} lugares
+                disponible</p>
+            <div className="show-more"><p>Ver más</p></div>
 
 
             <Popup
@@ -26,6 +24,8 @@ const CarCard = (props) => {
                     <img src={Join} className="JoinButton" alt="JoinButton" />
                 </div>}
                 modal
+                nested
+                {...{ overlayStyle }}
             >
                 {
                     (close) => {
