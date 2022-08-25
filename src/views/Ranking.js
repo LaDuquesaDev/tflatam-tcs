@@ -23,11 +23,6 @@ const drivers =
       id: 4,
       user: 'Diego López',
       score: 4.5
-    },
-    {
-      id: 5,
-      user: 'Saúl Moreno',
-      score: 4.4
     }
   ]
 
@@ -53,11 +48,6 @@ const passengers =
       id: 4,
       user: 'María Hernández',
       score: 4.4
-    },
-    {
-      id: 5,
-      user: 'Andrés Santibañez',
-      score: 4.3
     }
   ]
 

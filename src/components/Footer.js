@@ -17,7 +17,7 @@ function Footer() {
           className='footer-icon'
           alt='home icon'
           src={require('../images/home.png')}
-          onClick={navigate('/Home')}
+          onClick={()=>navigate('/Home')}
         />
         <img
           className='footer-icon'
