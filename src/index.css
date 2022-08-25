@@ -167,7 +167,10 @@ color: #ff0202;
 .types {
   width: 4em;
   height: 4em;
+  /* border: 2px solid red;
+  border-radius: 50%; */
 }
+
 
 /* AQUI ESTAN LOS COMMENTS */
 .comments-title {

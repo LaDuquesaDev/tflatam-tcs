@@ -61,7 +61,7 @@ const EmergencyButton = (args) => {
                 <ModalHeader toggle={toggle}>BOTÓN DE EMERGENCIA</ModalHeader>
                 <ModalBody>
                     <div className='emergency-types'>
-                        <div>
+                        <div className='emergency-option'>
                             <img className="types" src={accident} alt='Accidente'></img>
                             <p>Accidente</p>
                         </div>
