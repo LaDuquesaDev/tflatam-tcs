@@ -41,7 +41,7 @@ const AvailableModal = (props) => {
 
             </div>
             <div>
-                <img src={Join} alt="Join" className="join" width="95%" height="95%" />
+                <img src={Join} alt="Join" className="join" width="95%" height="95%" onClick={()=>navigate('/')}/>
             </div>
 
 

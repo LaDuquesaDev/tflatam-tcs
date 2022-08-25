@@ -1,0 +1,50 @@
+.home-container{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.home-return{
+    display: flex;
+    position: absolute;
+    margin-left: 20em;
+    margin-top: 3.1em;
+    border: none;
+    background-color: transparent;
+}
+
+.home-driver{
+    display: grid;
+    position: absolute;
+    margin-top: 0.8em;
+    margin-left: 1.3em;
+}
+
+.home-gradient-bar{
+    width: 100vw;
+}
+
+.home-name{
+    color: white;
+    font-size: large;
+    position: absolute;
+    margin-top: 1.4em;
+    margin-left: 7.2em;
+}
+
+.home-stars{
+    position: absolute;
+    margin-top: 2.5em;
+    margin-left: 8em;  
+}
+
+.timer {
+    margin-top: 3.2em;
+}
+
+.home-car{
+    display: flex;
+    margin-top: 1.7em;
+    margin-left: 2.5em;
+    float: left;
+}
