@@ -52,10 +52,10 @@ const EmergencyButton = (args) => {
     return (
         <div>
             <div className='buttonPrincipal-emergency'>
-                <Button color="white" onClick={toggle}>
+                <Button className='btnSos' color="white" onClick={toggle}>
                     <img className="" src={emergency} alt='Botón de emergencia'></img>
+                    <p>S.O.S</p>
                 </Button>
-                <p>S.O.S</p>
             </div>
             <Modal className="emergency-modal" isOpen={modal} toggle={toggle} {...args}>
                 <ModalHeader toggle={toggle}>BOTÓN DE EMERGENCIA</ModalHeader>
