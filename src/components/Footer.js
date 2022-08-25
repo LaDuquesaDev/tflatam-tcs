@@ -1,6 +1,8 @@
 import './Header-Footer.css';
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
 
   return (
     <div className="footer-group">
@@ -12,18 +14,21 @@ function Footer() {
       <div className='footer-icons'>
         <img
           className='footer-icon'
-          alt='gradient footer'
+          alt='home icon'
           src={require('../images/home.png')}
+          onClick={()=>navigate('/Home')}
         />
         <img
           className='footer-icon'
-          alt='gradient header'
+          alt='profile icon'
           src={require('../images/profile.png')}
+          onClick={()=>navigate('/Profile')}
         />
         <img
           className='footer-icon'
-          alt='gradient header'
+          alt='ranking icon'
           src={require('../images/ranking.png')}
+          onClick={()=>navigate('/Ranking')}
         />
       </div>
     </div>

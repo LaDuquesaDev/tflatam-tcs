@@ -21,18 +21,20 @@ export default function RouteMap() {
     return (
         <div className='routeMap'>
             <div className='routeHeader'>
-                <header>
-                    <img className="" id='view-logo' src={navRouteMap} alt='nav'></img>
+                {/* <header> */}
+                    <img className='view-logo' id='view-logo' src={navRouteMap} alt='nav'></img>
                     <div className="route-icons">
                         <img className="routeLogo" id='Route-logo' src={require('../images/logopque.png')} alt='Logo'></img>
                         <img className="routeExit" id='Route-exit' src={require('../images/humbleicons_logout.png')} alt='exit'></img>
                     </div>
-                </header>
+               {/*  </header> */}
             </div>
-            <img className="imgprofile" id='imgProfile' src={require('../images/imageperfil.png')} alt='Logo'></img>
             <section className='routeHi'>
-                <p>Hola Dariana!</p>
-                <h2>A dónde vas?</h2>
+                <img className="imgprofile" id='imgProfile' src={require('../images/imageperfil.png')} alt='Logo'></img>
+                <section className='greeting'>
+                    <p>Hola Dariana!</p>
+                    <h2>A dónde vas?</h2>
+                </section>
             </section>
             <div className='containerDirection'>
                 <div className='containerSince'>
@@ -44,7 +46,7 @@ export default function RouteMap() {
                     </select>
                 </div>
                 <div className='containerUntil'>
-                    <label for="form-select">hasta:</label>
+                    <label for="form-select">Hasta:</label>
                     <select class="form-select" aria-label="Default select example">
                         <option onChange={options}>-</option>
                         <option selected value={options.trabajo}>Trabajo</option>
@@ -54,7 +56,7 @@ export default function RouteMap() {
                 <button className="sign-in" onClick={handleClick}>Pide ahora</button>  
             </div>
             <div>
-                <Map options={options}/>
+                <Map />
             </div>
         </div>
 
