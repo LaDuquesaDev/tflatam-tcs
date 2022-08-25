@@ -96,34 +96,7 @@ body {
   overflow-y: scroll;
 } */
 
-.comments-faces {
-  border-radius: 50%;
-  border: none;
-}
 
-.comments-secondary {
-  width: 100%;
-  height: 80%;
-}
-
-.comments-container {
-  max-height: 80%;
-  height: 80%;
-  overflow-y: scroll;
-}
-
-.comments-button {
-  position: absolute;
-  width: 128px;
-  left: 94px;
-  top: 395px;
-  background: #4E98C0;
-  border-radius: 10px;
-  overflow-y: scroll;
-  border: none;
-  color: #FFFFFF;
-  z-index: -1;
-}
 
 /* AQUI ESTA EL BOTON DE EMERGENCIA */
 .buttonPrincipal-emergency {
@@ -165,13 +138,20 @@ color: #ff0202;
   justify-items: center;
 }
 
+.EmergencyDescription{
+  text-align: center;
+  margin: 0%;
+  color: red; 
+}
+
+
 .types {
   width: 4em;
   height: 4em;
 }
 
 /* AQUI ESTAN LOS COMMENTS */
-.comments-title {
+/* .comments-title {
   position: absolute;
   left: 87px;
   top: 98px;
@@ -240,12 +220,61 @@ color: #ff0202;
   color: #000000;
 }
 
+} */
 .comments-accordion {
-  position: absolute;
+  /* position: absolute;
   width: 270px;
   height: 437px;
   left: 20px;
-  top: 215px;
+  top: 215px; */
+  width: 22em;
+
+}
+.comments-principal{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  align-content: space-evenly;
+  overflow: scroll;
+}
+/* .comments-faces {
+  border-radius: 50%;
+  border: none;
+}
+
+.comments-secondary {
+  width: 100%;
+  height: 80%;
+} */
+
+.comments-container {
+  max-height: 80%;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.comments-button {
+  width: 128px;
+  background: #4E98C0;
+  border-radius: 10px;
+  overflow-y: scroll;
+  border: none;
+  color: #FFFFFF;
+  z-index: -1;
+}
+
+.accordion-face{
+  border: none;
+  background: transparent;
+}
+
+.accordionFace-principal{
+  background: #F5F5F5;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 
@@ -254,36 +283,58 @@ color: #ff0202;
 .photo-passenger,
 .photo-driver {
 
-  position: absolute;
+  /* position: absolute; */
   width: 90px;
   height: 90px;
   left: 21px;
   top: 60px;
 }
 
+.passengerTitle-container{
+  display: flex;
+  width: 22em;
+  gap: 20px;
+}
+
+.passengerComments-container{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.passenger-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .passenger-name,
 .driver-name {
-  position: absolute;
+  /* position: absolute; */
   left: 122px;
   top: 75px;
   font-size: 20px;
   font-family: houschkaDemibold, sans-serif;
   color: #5B6063;
+  margin: 0%;
 }
 
 .passenger-type,
 .driver-type {
-  position: absolute;
+  /* position: absolute; */
   left: 122px;
   top: 95px;
   font-family: houschkaMedium, sans-serif;
   font-size: 18px;
   color: #5B6063;
+  margin:0%;
 }
 
 .passenger-stars,
 .driver-stars {
-  position: absolute;
+  /* position: absolute; */
   left: 122px;
   top: 115px;
   font-size: 23px;
@@ -291,7 +342,7 @@ color: #ff0202;
 
 .passengerText-container,
 .driverText-container {
-  position: absolute;
+  /* position: absolute; */
   width: 313px;
   height: 404px;
   left: 37px;

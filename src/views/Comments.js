@@ -1,6 +1,6 @@
 import star from '../images/star.svg';
 import AccordionC from '../components/AccordionC';
-import EmergencyButton from '../components/EmergencyButton';
+// import EmergencyButton from '../components/EmergencyButton';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import React, { useState } from 'react';
@@ -27,9 +27,8 @@ export const Comments = () => {
                     <input type="text" name="name" className='comments-description' />
                     {/* <EmergencyButton /> */}
                     <p className='commentsThree'>Evalúa a tus acompañantes</p>
-                    <AccordionC />
-                    <button className='comments-button'>Enviar</button>
-                    <EmergencyButton />
+                    <AccordionC commentsSelected={commentsSelected} setCommentsSelected={setCommentsSelected} />
+                    {/* <EmergencyButton /> */}
                 </section>
             </div>
             <Footer />

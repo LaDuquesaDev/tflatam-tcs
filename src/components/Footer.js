@@ -1,16 +1,18 @@
 import './Header-Footer.css';
 import { useNavigate } from "react-router-dom";
+import down from '../images/down.svg';
 
 function Footer() {
   const navigate = useNavigate();
 
   return (
     <div className="footer-group">
-      <img
+      {/* <img
         className='gradient footer'
         alt='gradient footer'
         src={require('../images/footer.png')}
-      />
+      /> */}
+       <img className="" id='view-logo' src={down} alt='Logo'></img>
       <div className='footer-icons'>
         <img
           className='footer-icon'

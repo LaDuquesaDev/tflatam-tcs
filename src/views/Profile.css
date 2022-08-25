@@ -1,12 +1,19 @@
 .profile-group {
-  width: 100vw;
+  /* width: 100vw;
   position: absolute;
   top: 11%;
-  text-align: center;
+  text-align: center; */
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .profile-icon {
-  width: 10%;
+  width: 5%;
+  z-index: 1;
 }
 
 .profile-h1 {
@@ -15,7 +22,8 @@
 
 .profile-tabs {
   display: block;
-  padding: 2% 7%;
+  /* padding: 2% 7%; */
+  width: 22em;
 }
 
 .profile-personal,
