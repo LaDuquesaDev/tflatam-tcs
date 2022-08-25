@@ -74,11 +74,11 @@ const AccordionC = ({ setCommentsSelected, commentsSelected }) => {
                 <AccordionItem>
                     <AccordionHeader targetId="1">Angie Herrera</AccordionHeader>
                     <AccordionBody accordionId="1">
-                        <div>
-                            <button data-status="dislike" onClick={(e) => oneFaceClick("Angie Herrera", e, 0)}><img className="comments-faces" src={dislike} alt='No me gusto'></img></button>
-                            <button data-status="so" onClick={(e) => oneFaceClick("Angie Herrera", e, 0)}><img className="comments-faces" src={so} alt='Regular'></img></button>
-                            <button data-status="good" onClick={(e) => oneFaceClick("Angie Herrera", e, 0)}><img className="comments-faces" src={good} alt='Bueno'></img></button>
-                            <button data-status="perfect" onClick={(e) => oneFaceClick("Angie Herrera", e, 0)}><img className="comments-faces" src={perfect} alt='Perfecto'></img></button>
+                        <div className='accordionFace-principal'>
+                            <button className="accordion-face" data-status="dislike" onClick={(e) => oneFaceClick("Angie Herrera", e, 0)}><img className="comments-faces" src={dislike} alt='No me gusto'></img></button>
+                            <button className="accordion-face" data-status="so" onClick={(e) => oneFaceClick("Angie Herrera", e, 0)}><img className="comments-faces" src={so} alt='Regular'></img></button>
+                            <button className="accordion-face" data-status="good" onClick={(e) => oneFaceClick("Angie Herrera", e, 0)}><img className="comments-faces" src={good} alt='Bueno'></img></button>
+                            <button className="accordion-face" data-status="perfect" onClick={(e) => oneFaceClick("Angie Herrera", e, 0)}><img className="comments-faces" src={perfect} alt='Perfecto'></img></button>
                         </div>
                         <CheckboxC oneCommentClick={oneCommentClick} index={0} />
                     </AccordionBody>
@@ -86,11 +86,11 @@ const AccordionC = ({ setCommentsSelected, commentsSelected }) => {
                 <AccordionItem>
                     <AccordionHeader targetId="2">Daniela Cañas</AccordionHeader>
                     <AccordionBody accordionId="2">
-                        <div>
-                            <button data-status="dislike" onClick={(e) => oneFaceClick("Daniela Cañas", e, 1)}><img className="comments-faces" src={dislike} alt='No me gusto'></img></button>
-                            <button data-status="so" onClick={(e) => oneFaceClick("Daniela Cañas", e, 1)}><img className="comments-faces" src={so} alt='Regular'></img></button>
-                            <button data-status="good" onClick={(e) => oneFaceClick("Daniela Cañas", e, 1)}><img className="comments-faces" src={good} alt='Bueno'></img></button>
-                            <button data-status="perfect" onClick={(e) => oneFaceClick("Daniela Cañas", e, 1)}><img className="comments-faces" src={perfect} alt='Perfecto'></img></button>
+                        <div className='accordionFace-principal'>
+                            <button className="accordion-face" data-status="dislike" onClick={(e) => oneFaceClick("Daniela Cañas", e, 1)}><img className="comments-faces" src={dislike} alt='No me gusto'></img></button>
+                            <button className="accordion-face" data-status="so" onClick={(e) => oneFaceClick("Daniela Cañas", e, 1)}><img className="comments-faces" src={so} alt='Regular'></img></button>
+                            <button className="accordion-face" data-status="good" onClick={(e) => oneFaceClick("Daniela Cañas", e, 1)}><img className="comments-faces" src={good} alt='Bueno'></img></button>
+                            <button className="accordion-face" data-status="perfect" onClick={(e) => oneFaceClick("Daniela Cañas", e, 1)}><img className="comments-faces" src={perfect} alt='Perfecto'></img></button>
                         </div>
                         <CheckboxC oneCommentClick={oneCommentClick} index={1} />
                     </AccordionBody>
@@ -98,17 +98,17 @@ const AccordionC = ({ setCommentsSelected, commentsSelected }) => {
                 <AccordionItem>
                     <AccordionHeader targetId="3">Juan Vargas</AccordionHeader>
                     <AccordionBody accordionId="3">
-                        <div>
-                            <button data-status="dislike" onClick={(e) => oneFaceClick("Juan Vargas", e, 2)}><img className="comments-faces" src={dislike} alt='No me gusto'></img></button>
-                            <button data-status="so" onClick={(e) => oneFaceClick("Juan Vargas", e, 2)}><img className="comments-faces" src={so} alt='Regular'></img></button>
-                            <button data-status="good" onClick={(e) => oneFaceClick("Juan Vargas", e, 2)}><img className="comments-faces" src={good} alt='Bueno'></img></button>
-                            <button data-status="perfect" onClick={(e) => oneFaceClick("Juan Vargas", e, 2)}><img className="comments-faces" src={perfect} alt='Perfecto'></img></button>
+                        <div className='accordionFace-principal'>
+                            <button className="accordion-face" data-status="dislike" onClick={(e) => oneFaceClick("Juan Vargas", e, 2)}><img className="comments-faces" src={dislike} alt='No me gusto'></img></button>
+                            <button className="accordion-face" data-status="so" onClick={(e) => oneFaceClick("Juan Vargas", e, 2)}><img className="comments-faces" src={so} alt='Regular'></img></button>
+                            <button className="accordion-face" data-status="good" onClick={(e) => oneFaceClick("Juan Vargas", e, 2)}><img className="comments-faces" src={good} alt='Bueno'></img></button>
+                            <button className="accordion-face" data-status="perfect" onClick={(e) => oneFaceClick("Juan Vargas", e, 2)}><img className="comments-faces" src={perfect} alt='Perfecto'></img></button>
                         </div>
                         <CheckboxC oneCommentClick={oneCommentClick} index={2} />
                     </AccordionBody>
                 </AccordionItem>
             </Accordion>
-            <button className='comments-button' onClick={() => {onSubmit(); handleClick()}}>Enviar</button>
+            <button className='comments-button' onClick={() => {onSubmit(); handleClick(); console.log("holaaaaaa")}}>Enviar</button>
         </div>
     )
 }

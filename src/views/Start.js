@@ -1,5 +1,7 @@
 import React from 'react'
 import './Start.css'
+import car from '../images/car.svg';
+
 import EmergencyButton from "../components/EmergencyButton"
 import Map from "../components/Map";
 import  Countdown  from  'react-countdown' ;
@@ -24,6 +26,7 @@ export default function Start() {
 
   return (
     <div>
+
         <div className='startMap'>
           <Map />
           <div className='btnEmergency' >
@@ -41,6 +44,7 @@ export default function Start() {
       
           </div>
         </footer>
+
 
 
     </div>
