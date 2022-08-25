@@ -1,8 +1,6 @@
 import './Header-Footer.css';
 import { useNavigate } from "react-router-dom";
 
-
-
 function Header() {
   const navigate = useNavigate()
   return (
@@ -15,14 +13,14 @@ function Header() {
       <div className='header-icons'>
         <img
           className='header-icon'
-          alt='gradient header'
+          alt='TCS white logo'
           src={require('../images/tcs-logo.png')}
         />
         <img
           className='header-logout'
-          alt='gradient header'
+          alt='logout logo'
           src={require('../images/logout.png')}
-          onClick={() => navigate("/")}
+          onClick={() => navigate('/')}
         />
       </div>
     </div>
