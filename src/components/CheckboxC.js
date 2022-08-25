@@ -6,7 +6,7 @@ import {
     Form
 } from 'reactstrap';
 
-export default function CheckboxC() {
+export default function CheckboxC({oneCommentClick, index}) {
     return (
         <div>
             <Form>
@@ -14,43 +14,40 @@ export default function CheckboxC() {
                     check
                     inline
                 >
-                    <Input type="checkbox" />
-                    <Label check> Héroe </Label>
+                    <Input value="Heroe" onChange={(e)=> oneCommentClick(index, e)} type="checkbox" /> Heroe
                 </FormGroup>
                 <FormGroup
                     check
                     inline
                 >
-                    <Input type="checkbox" />
-                    <Label check>Amigable</Label>
+                    <Input value="Amigable" onChange={(e)=> oneCommentClick(index, e)}type="checkbox" /> Amigable
                 </FormGroup>
                 <FormGroup
                     check
                     inline
                 >
-                    <Input type="checkbox" />
-                    <Label check>Conversador</Label>
+                    <Input value="Conversador" onChange={(e)=> oneCommentClick(index, e)}type="checkbox" /> Conversador
+
                 </FormGroup>
                 <FormGroup
                     check
                     inline
                 >
-                    <Input type="checkbox" />
-                    <Label check>Respetuoso</Label>
+                    <Input value="Respetuoso" onChange={(e)=> oneCommentClick(index, e)} type="checkbox" /> Respetuoso
+
                 </FormGroup>
                 <FormGroup
                     check
                     inline
                 >
-                    <Input type="checkbox" />
-                    <Label check>No me agrada</Label>
+                    <Input value="No me agrada" onChange={(e)=> oneCommentClick(index, e)} type="checkbox" /> No me agrada
                 </FormGroup>
                 <FormGroup
                     check
                     inline
                 >
-                    <Input type="checkbox" />
-                    <Label check>Grosero</Label>
+                    <Input value="Grosero" onChange={(e)=> oneCommentClick(index, e)} type="checkbox" /> Grosero
+
                 </FormGroup>
             </Form>
         </div>

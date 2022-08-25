@@ -3,9 +3,12 @@ import AccordionC from '../components/AccordionC';
 import EmergencyButton from '../components/EmergencyButton';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import React, { useState } from 'react';
 
 
 export const Comments = () => {
+    const [commentsSelected, setCommentsSelected] = useState([])
+    console.log({commentsSelected})
     return (
         <div className='comments-principal'>
             <Header />
