@@ -91,10 +91,9 @@ body {
   color: rgba(128, 118, 118, 1);
 }
 
-/* .comments-accordion {
-  width: 20em;
-  overflow-y: scroll;
-} */
+.comment-stars {
+  width: 15%;
+}
 
 .comments-faces {
   border-radius: 50%;
@@ -168,7 +167,10 @@ color: #ff0202;
 .types {
   width: 4em;
   height: 4em;
+  /* border: 2px solid red;
+  border-radius: 50%; */
 }
+
 
 /* AQUI ESTAN LOS COMMENTS */
 .comments-title {
