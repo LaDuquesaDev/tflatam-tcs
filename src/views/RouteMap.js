@@ -3,12 +3,42 @@ import { useNavigate } from "react-router-dom";
 import navRouteMap from '../images/navRouteMap.svg';
 import Map from "../components/Map";
 import './RouteMap.css'
+import Header from '../components/Header';
+import MapConRuta from '../components/MapConRuta';
+import { useState } from 'react';
+import { useGoogleMap } from '@react-google-maps/api'
 
-let options = {
-    casa: { lat: 4.733580998215758, lng: -74.03514445129802 },
-    trabajo: { lat: 4.681512920071723, lng: -74.04206131659186 }
-    
-}
+
+export default function RouteMap() {
+    const [originIndexSelected, setOriginIndexSelected] = useState(0);
+    const [destIndexSelected, setDestIndexSelected] = useState(0);
+
+    const coordinatesOrigin = [
+        [],
+        [4.720151411709265, -74.06582892143456],
+        [4.7195954, -74.076665],
+        [4.735519, -74.063885]
+    ]
+
+    const coordinatesDestino = [
+        [],
+        [4.6819997074631745, -74.04196798880038]
+    ]
+
+    var latOrg;
+    var longOrg;
+
+    var latDest;
+    var longDest;
+
+    if (originIndexSelected !== 0 || destIndexSelected !== 0) {
+        latOrg = coordinatesOrigin[originIndexSelected][0];
+        longOrg = coordinatesOrigin[originIndexSelected][1];
+
+        latDest = coordinatesDestino[destIndexSelected][0];
+        longDest = coordinatesDestino[destIndexSelected][1];
+    }
+
 
 export default function RouteMap() {
    
@@ -18,16 +48,22 @@ export default function RouteMap() {
         navigate("/AvailableCars")
     }
 
+
+    const onChangeOrg = (event) => {
+        const index = event.target.value;
+        setOriginIndexSelected(parseInt(index));
+
+    }
+
+    const onChangeDest = (event) => {
+        const index = event.target.value;
+        setDestIndexSelected(parseInt(index));
+    }
+
     return (
         <div className='routeMap'>
             <div className='routeHeader'>
-                {/* <header> */}
-                    <img className='view-logo' id='view-logo' src={navRouteMap} alt='nav'></img>
-                    <div className="route-icons">
-                        <img className="routeLogo" id='Route-logo' src={require('../images/logopque.png')} alt='Logo'></img>
-                        <img className="routeExit" id='Route-exit' src={require('../images/humbleicons_logout.png')} alt='exit'></img>
-                    </div>
-               {/*  </header> */}
+                <Header />
             </div>
             <section className='routeHi'>
                 <img className="imgprofile" id='imgProfile' src={require('../images/imageperfil.png')} alt='Logo'></img>
@@ -39,18 +75,23 @@ export default function RouteMap() {
             <div className='containerDirection'>
                 <div className='containerSince'>
                     <label for="form-select">Desde:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option onChange={options}>-</option>
-                        <option selected value={options.casa}>Casa</option>
-                        <option value={options.trabajo}>Trabajo</option>
+
+                    <select class="form-select" aria-label="Default select example" onChange={onChangeOrg}>
+                        <option selected></option>
+                        <option value="1">Casa 1</option>
+                        <option value="2">Casa 2</option>
+                        <option value="3">Casa 3</option>
+
                     </select>
                 </div>
                 <div className='containerUntil'>
                     <label for="form-select">Hasta:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option onChange={options}>-</option>
-                        <option selected value={options.trabajo}>Trabajo</option>
-                        <option value={options.casa}>Casa</option>
+
+                    <select class="form-select" aria-label="Default select example" onChange={onChangeDest}>
+                        <option selected></option>
+                        <option value="1">Trabajo</option>
+                        <option value="2">Two</option>
+
                     </select>
                 </div>
                 <button className="sign-in" onClick={handleClick}>Pide ahora</button>  
@@ -58,7 +99,7 @@ export default function RouteMap() {
             <div>
                 <Map />
             </div>
-        </div>
-
+            {(latOrg == null || latDest != null) ? <div className="mapa-route"><MapConRuta latitudeOrigin={latOrg} longitudeOrigin={longOrg} latitudeDest={latDest} longituideDest={longDest} ></MapConRuta></div> : <div><MapConRuta></MapConRuta></div>}
+        </div >
     )
 }

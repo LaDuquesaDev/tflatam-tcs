@@ -4,13 +4,14 @@ import { Icon } from '@iconify/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+
 const DriverComments = () => {
     return (
         <>
-            <Header/>
+            <Header />
             <section className='driverComments-container'>
                 <section className='driverTitle-container'>
-                    <img className='photo-driver' src={driver} alt='driver' style={{ zIndex: "10" }}/>
+                    <img className='photo-driver' src={driver} alt='driver' style={{ zIndex: "10" }} />
                     <h3 className='driver-name'>Dariana Quintero</h3>
                     <p className='driver-type'>Conductora</p>
                     <section className='driver-stars'>
@@ -22,7 +23,7 @@ const DriverComments = () => {
                     </section>
                 </section>
                 <section className='driverText-container'>
-                    <h4 className='title-recognition'>Aquí están tus reconocimientos</h4>
+                    <h4 className='title-recognition' fontSize='80px'>Aquí están tus reconocimientos</h4>
                     <section className='comment'>
                         <Icon icon='healthicons:tongue' color='#ec4646' fontSize='70px' />
                         <p>Rechazo mi viaje</p>
@@ -41,7 +42,7 @@ const DriverComments = () => {
                     </section>
                 </section>
             </section>
-            <Footer/>
+            <Footer />
         </>
     )
 }
