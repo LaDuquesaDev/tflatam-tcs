@@ -11,21 +11,15 @@
 }
 
 .footer {
-  position: absolute;
-  width: 410px;
-  height: 104px;
-  left: -5px;
-  top: 700px;
-  z-index: -1;
+  bottom: 0;
+  left: -1px;
+  bottom: -1px;
 }
 
 .header {
-  position: absolute;
-  width: 410px;
-  height: 125px;
-  left: -5px;
-  top: -3px;
-  z-index: -1;
+  width: 105vw;
+  top: -1px;
+  left: -1px;
 }
 
 .footer-icon {
@@ -38,33 +32,23 @@
   display: flex;
   justify-content: space-between;
   z-index: 10;
-  position: absolute;
-  left: -3px;
-  top: 760px;
+  position: fixed;
+  bottom: 3%;
 }
 
 .header-icons {
   width: 92%;
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   margin: 0 5%;
   z-index: 10;
   top: 2%;
 }
 
-.header-icon {
-  position: absolute;
-  width: 58px;
-  height: 40px;
-  left: -200px;
-  top: -2px;
+.header-icon{
+  height: 46px;
 }
-
-.header-logout {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  left: 135px;
-  top: 4px;
+.header-logout{
+  height: 30px;
 }

@@ -9,7 +9,7 @@ export const Comments = () => {
     return (
         <div className='comments-principal'>
             <Header />
-            <div>
+            <div className='comments-secondary'>
                 <h2 className='comments-title'>Has llegado a tu destino</h2>
                 <section className='comments-container'>
                     <p className='commentsOne'>Como evaluarías tu viaje con Dariana?</p>

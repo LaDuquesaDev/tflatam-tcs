@@ -10,7 +10,7 @@ const PassengerComments = () => {
             <Header/>
             <section className='passengerComments-container'>
                 <section className='passengerTitle-container'>
-                    <img className='photo-passenger' src={passenger} alt='passenger' />
+                    <img className='photo-passenger' src={passenger} alt='passenger' style={{ zIndex: "10" }}/>
                     <h3 className='passenger-name'>Daniela Cañas</h3>
                     <p className='passenger-type'>Pasajera</p>
                     <section className='passenger-stars'>
