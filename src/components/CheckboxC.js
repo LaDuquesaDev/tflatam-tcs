@@ -2,7 +2,6 @@ import React from 'react'
 import {
     FormGroup,
     Input,
-    Label,
     Form
 } from 'reactstrap';
 

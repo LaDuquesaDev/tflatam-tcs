@@ -1,12 +1,12 @@
 import React from 'react'
 import './Start.css'
-import car from '../images/car.svg';
 
 import EmergencyButton from "../components/EmergencyButton"
 import Map from "../components/Map";
 import  Countdown  from  'react-countdown' ;
 import { useNavigate } from 'react-router-dom';
-import car from '../images/car.svg';
+
+
 export default function Start() {
   
   const navigate = useNavigate();

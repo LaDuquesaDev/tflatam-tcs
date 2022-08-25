@@ -1,6 +1,5 @@
 import React from "react";
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import { useEffect } from "react";
 
 const center = {
   lat: 4.6819997074631745,
