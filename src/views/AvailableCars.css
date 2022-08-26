@@ -10,7 +10,9 @@
   align-content: space-evenly;
 
     }
-    
+.available{
+  margin-top: 1em;
+}
     
     .car-list{
     display:flex;

@@ -61,7 +61,7 @@ function Ranking() {
       <img
         className='ranking-back'
         alt='back icon'
-        src={require('../images/back.png')}
+        src={require('../images/returnTravel.png')}
         onClick={() => navigate(-1)}
       />
       <img

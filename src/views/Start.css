@@ -1,25 +1,37 @@
-.startMap{
-    margin-top: 2em;
+.start-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    /* margin-top: 2em;
     height: auto;
     width: 100%;
+    z-index: 1; */
+}
+
+.startBar{
+    width: 24.5em;
     z-index: 1;
 }
+
+.start-map{
+    width: 24.5em;
+}
+
 .StartFooter{
     bottom: 10%;
-    position: fixed;
-    }
+    /* position: fixed; */
+}
+
+.star-timer {
+    margin-top: 2em;
+    margin-bottom: 1.3em;
+}
     
 .starCar{
+    display: flex;
+    margin-left: 7em;
     float: left;
-    margin-top: 0.5em;
-    margin-left: 5%;
-}
- 
-.btnEmergency{
-    z-index: 2;
-    margin-top: -55%;
-    position: relative;
-    float: right;
-    border-radius: 12%;
-    
 }

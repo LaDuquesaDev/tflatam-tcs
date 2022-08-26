@@ -47,14 +47,17 @@ body {
 .logo {
   width: 24em;
   height: 7em;
+  margin-top: 6.5em;
   /* border: 1px solid blue; */
 }
 
 .container-login {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   align-content: space-evenly;
@@ -95,15 +98,25 @@ body {
   width: 15%;
 }
 
+.header-login {
+  width: 24.5em;
+  position: absolute;
+  top: 0;
+}
 
+.footer-login {
+  width: 24.5em;
+  position: absolute;
+  bottom: 0;
+}
 
 /* AQUI ESTA EL BOTON DE EMERGENCIA */
 .buttonPrincipal-emergency {
   position: absolute;
   width: 79px;
   height: 98px;
-  left: 250px;
-  top: 200px;
+  left: 292px;
+  bottom: 35px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
@@ -143,6 +156,17 @@ color: #ff0202;
   color: red; 
 }
 
+.countdownT{
+  margin-top: 1em;
+  font-family: calibriBold, sans-serif;
+  font-size: 1.5em;
+}
+
+.countdownT-img{
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5em;
+}
 
 .types {
   width: 4em;
@@ -153,109 +177,58 @@ color: #ff0202;
 
 
 /* AQUI ESTAN LOS COMMENTS */
-/* .comments-title {
-  position: absolute;
-  left: 87px;
-  top: 98px;
-  font-family: houschkaDemibold, sans-serif;
-  font-size: 25px;
-  color: #204F90;
-}
 
-.comments-container {
+.comments-accordion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  width: 313px;
-  height: 460px;
-  left: 33px;
-  top: 141px;
-  border: 1px solid #D9D9D9;
-  border-radius: 20px;
+  justify-content: center;
+  overflow-y: scroll;
 }
 
-.commentsOne {
-  position: absolute;
-  left: 20px;
-  top: 15px;
-  font-family: calibriBold, sans-serif;
-  font-size: 17px;
-  color: #000000;
-}
-
-.commentStar {
+.infoProducts{
   display: flex;
-  position: absolute;
-  gap: 7px;
-  left: 43px;
-  top: 40px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.commentsTwo {
-  position: absolute;
-  left: 55px;
-  top: 100px;
-  font-family: calibriBold, sans-serif;
-  font-size: 17px;
-  color: #000000;
-}
-
-.comments-description {
-  position: absolute;
-  width: 247px;
-  height: 33px;
-  left: 31px;
-  top: 130px;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-  border-radius: 10px;
-  border: none;
-}
-
-.commentsThree {
-  position: absolute;
-  left: 60px;
-  top: 180px;
-  font-family: calibriBold, sans-serif;
-  font-size: 17px;
-  color: #000000;
-}
-
-} */
-.comments-accordion {
-  /* position: absolute;
-  width: 270px;
-  height: 437px;
-  left: 20px;
-  top: 215px; */
-  width: 22em;
-
-}
 .comments-principal{
   width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   align-content: space-evenly;
   overflow: scroll;
+  margin-top: 3em;
+}
+.comments-title{
+  font-size: larger;
+  color: #204F90;
 }
 /* .comments-faces {
   border-radius: 50%;
   border: none;
-}
-
-.comments-secondary {
-  width: 100%;
-  height: 80%;
 } */
 
-.comments-container {
-  max-height: 80%;
-  height: 80%;
+.comments-secondary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   overflow-y: scroll;
+} 
+
+.comments-container {
+  max-height: 85%;
+  height: 85%;
+  width: 320px;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding-top: 1em;
 }
 
 .comments-button {
@@ -265,7 +238,7 @@ color: #ff0202;
   overflow-y: scroll;
   border: none;
   color: #FFFFFF;
-  z-index: -1;
+  z-index: 10;
 }
 
 .accordion-face{
@@ -282,7 +255,14 @@ color: #ff0202;
 
 /* AQUI ESTAN LOS ESTILOS DE LA VISTA DE RECONOCIMIENTOS A PASAJEROS */
 
-.photo-passenger,
+.photo-passenger{
+  width: 90px;
+  height: 90px;
+  /* left: 21px; */
+  margin: 0;;
+
+}
+
 .photo-driver {
 
   /* position: absolute; */
@@ -294,22 +274,26 @@ color: #ff0202;
 
 .passengerTitle-container{
   display: flex;
+  align-items: center;
+  flex-direction: column;
+
   width: 22em;
   gap: 20px;
+  margin-bottom: 2em;
 }
 
-.passengerComments-container{
+/* .passengerComments-container{
   width: 100vw;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
-}
+} */
 
 .passenger-container{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .passenger-name,
@@ -342,11 +326,25 @@ color: #ff0202;
   font-size: 23px;
 }
 
+.driverComments-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.passengerComments-container{
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .passengerText-container,
 .driverText-container {
   /* position: absolute; */
   width: 313px;
-  height: 404px;
+  max-height: 70%;
+  overflow-y: scroll;
   left: 37px;
   top: 171px;
   border: 1px solid #D9D9D9;
@@ -354,6 +352,9 @@ color: #ff0202;
   padding: 15px;
 }
 
+.list-passenger{
+  display: flex;
+}
 .title-recognition {
   left: 91px;
   top: 20px;
@@ -376,4 +377,15 @@ color: #ff0202;
   font-family: calibriRegular, sans-serif;
   font-size: 19px;
   color: #5B6063;
+}
+
+.comments-return{
+  position: fixed;
+  width: 11%;
+  left: 14px;
+  z-index: 10;
+  top: 8vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  border: none;
 }

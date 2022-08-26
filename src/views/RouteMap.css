@@ -13,6 +13,16 @@
   margin-top: -251px;
 } */
 
+.routeMap{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 4em;
+}
+
 
 
 
@@ -29,9 +39,12 @@
 
 .routeHi{
   display: flex;
-  position: absolute;
+  /* position: absolute; */
   left: 39%;
   top: 11%;
+  width: 16em;
+  justify-content: space-around;
+ 
 }
 
 .routeHi p {
@@ -53,25 +66,17 @@
 }
 
 .containerDirection {
-/*   display: flex;
-  gap: 10px;
-  flex-direction: column;
-  align-items: center; */
-  margin-left: 37px;
-  margin-top:180px;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   align-content: space-evenly;
   width: 20em;
-  height: 18em;
+  height: 12em;
   border-radius: 20px;
-  width: 100%;
-  width: 315px;
-  height: 163px;
   background: #FFFFFF;
   border: 1px solid #E1E1E1;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  z-index: 2;
 }
 
 .containerSince,
@@ -129,4 +134,23 @@
   right: 313px;
   top: 40px; */
 
+}
+
+.routeGoogle{
+  width: 24.5em;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+  top: 18em; 
+}
+
+.greeting{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.greeting p {
+  margin:0%; 
 }

@@ -88,9 +88,9 @@ const EmergencyButton = (args) => {
                     </FormGroup>
                     <p className='EmergencyDescription'>Si no hay descripción sobre la emergencia,</p>
                     <p className='EmergencyDescription'>se considerará de alto riesgo</p>
-                    <div>
-                        <img className="" src={timer} alt='temporizador'></img>
-                        {runTimmer && <Countdown date={Date.now() + 10000} renderer={renderer} />}
+                    <div className='countdownT'>
+                        <img className="countdownT-img" src={timer} alt='temporizador'></img>
+                        {runTimmer && <Countdown className='countdown-font' date={Date.now() + 10000} renderer={renderer} />}
                     </div>
                 </ModalBody>
                 <ModalFooter>

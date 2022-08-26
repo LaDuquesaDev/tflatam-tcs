@@ -56,7 +56,7 @@ export const Comments = () => {
             <div className='comments-secondary'>
                 <h2 className='comments-title'>Has llegado a tu destino</h2>
                 <section className='comments-container'>
-                    <p className='commentsOne'>Como evaluarías tu viaje con Dariana?</p>
+                    <p className='commentsOne'>¿Cómo evaluarías tu viaje con Dariana?</p>
                     <div className='commentStar'>
                         <img className="comment-stars" src={require(`../images/${star1}`)} alt='Estrella' onClick={oneStar}></img>
                         <img className="comment-stars" src={require(`../images/${star2}`)} alt='Estrella' onClick={twoStar}></img>
@@ -64,8 +64,11 @@ export const Comments = () => {
                         <img className="comment-stars" src={require(`../images/${star4}`)} alt='Estrella' onClick={fourStar}></img>
                         <img className="comment-stars" src={require(`../images/${star5}`)} alt='Estrella' onClick={fiveStar}></img>
                     </div>
+                    <br/>
                     <p className='commentsTwo'>Déjale un mensaje a Dariana</p>
-                    <input type="text" name="name" className='comments-description' />
+                    <input type="text" name="name" className='comments-description'/>
+                    <br/>
+                    <br/>
                     <p className='commentsThree'>Evalúa a tus acompañantes</p>
                     <AccordionC commentsSelected={commentsSelected} setCommentsSelected={setCommentsSelected} />
                     {/* <EmergencyButton /> */}

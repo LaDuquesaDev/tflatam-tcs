@@ -15,7 +15,7 @@ const Login = () => {
 
   return (
     <div className="container-login">
-      <img className="" src={up} alt='Logo'></img>
+      <img className="header-login" src={up} alt='Logo'></img>
       <img className="logo"  src={logo} alt='Logo'></img>
       <form className="form-login">
         <label>
@@ -29,7 +29,7 @@ const Login = () => {
         <Link className="forgot-password" to='#'>Olvidaste tu contraseña?</Link>
         <button className="sign-in" type="submit" onClick={handleClick}>Iniciar Sesión</button>
       </form>
-      <img className="" id='view-logo' src={down} alt='Logo'></img>
+      <img className="footer-login" id='view-logo' src={down} alt='Logo'></img>
     </div>
   )
 }

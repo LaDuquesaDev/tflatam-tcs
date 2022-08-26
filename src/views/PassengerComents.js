@@ -4,9 +4,11 @@ import { Icon } from '@iconify/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const PassengerComments = () => {
     const [comments, setComments] = useState([])
+    const navigate = useNavigate();
 
     useEffect(() => {
         const commentsInfo = JSON.parse(localStorage.getItem("commentsSelected"));
@@ -18,6 +20,9 @@ const PassengerComments = () => {
         setComments(commentsWithValue)
     }, [])
 
+    const returnButton = () => {
+        navigate(-1)
+      }
 
 
     return (
@@ -25,7 +30,7 @@ const PassengerComments = () => {
             <Header />
             <section className='passengerComments-container'>
                 <section className='passengerTitle-container'>
-                    <img className='photo-passenger' src={passenger} alt='passenger' style={{ zIndex: "10" }}/>
+                    <img className='photo-passenger' src={passenger} alt='passenger' style={{ zIndex: "10",/* marginTop:'3.5em' */}}/>
                     <div className='passenger-container'>
                         <h3 className='passenger-name'>Daniela Cañas</h3>
                         <p className='passenger-type'>Pasajera</p>
@@ -38,16 +43,19 @@ const PassengerComments = () => {
                         </section>
                     </div>
                 </section>
+                <button className="comments-return" type="submit" onClick={returnButton}>
+                    <img src={require('../images/returnTravel.png')} />
+                </button>
                 <section className='passengerText-container'>
-                    <h4 className='title-recognition'>Aquí están tus reconocimientos</h4>
-                    <ul>
+                    <h4 className='title-recognition' style={{fontSize:'large'}}>Aquí están tus reconocimientos</h4>
+                    <ul className='list-passenger'>
                         {comments && comments.map((item, index) =>
                             <div className="infoProducts" key={index}>
 
                                 <dd>{item.comments.map((element) => 
                                     
                                     <dd>
-                                        <Icon icon='healthicons:happy' color='#52b130' fontSize='70px'/>
+                                        <Icon icon='healthicons:happy' color='#52b130' fontSize='60px' style={{ justifySelf:"flex-start"}}/>
                                         {element}
                                     </dd>
                                      )

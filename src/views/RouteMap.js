@@ -64,8 +64,8 @@ export default function RouteMap() {
             <section className='routeHi'>
                 <img className="imgprofile" id='imgProfile' src={require('../images/imageperfil.png')} alt='Logo'></img>
                 <section className='greeting'>
-                    <p>Hola Dariana!</p>
-                    <h2>A dónde vas?</h2>
+                    <p>Hola Dariana</p>
+                    <h2>¿A dónde vas?</h2>
                 </section>
             </section>
             <div className='containerDirection'>
@@ -92,10 +92,11 @@ export default function RouteMap() {
                 </div>
                 <button className="sign-in" onClick={handleClick}>Pide ahora</button>
             </div>
-            <div>
-            </div>
+            <div className='routeGoogle'>
+            
             {(latOrg == null || latDest != null) ? <div className="mapa-route"><MapConRuta latitudeOrigin={latOrg} longitudeOrigin={longOrg} latitudeDest={latDest} longituideDest={longDest} ></MapConRuta></div> : <div><MapConRuta></MapConRuta></div>}
             {/* <Map></Map> */}
+            </div>
         </div >
     )
 }

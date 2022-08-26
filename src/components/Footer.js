@@ -12,13 +12,13 @@ function Footer() {
         alt='gradient footer'
         src={require('../images/footer.png')}
       /> */}
-       <img className="" id='view-logo' src={down} alt='Logo'></img>
+       <img className="footer-down" id='view-logo' src={down} alt='Logo'></img>
       <div className='footer-icons'>
         <img
           className='footer-icon'
           alt='home icon'
           src={require('../images/home.png')}
-          onClick={()=>navigate('/Home')}
+          onClick={()=>navigate('/RouterMap')}
         />
         <img
           className='footer-icon'

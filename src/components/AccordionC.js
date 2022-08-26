@@ -70,7 +70,7 @@ const AccordionC = ({ setCommentsSelected, commentsSelected }) => {
 
     return (
         <div className='comments-accordion'>
-            <Accordion open={open} toggle={toggle}>
+            <Accordion open={open} toggle={toggle} style={{width: '90%'}}>
                 <AccordionItem>
                     <AccordionHeader targetId="1">Angie Herrera</AccordionHeader>
                     <AccordionBody accordionId="1">
@@ -108,7 +108,9 @@ const AccordionC = ({ setCommentsSelected, commentsSelected }) => {
                     </AccordionBody>
                 </AccordionItem>
             </Accordion>
-            <button className='comments-button' onClick={() => {onSubmit(); handleClick(); console.log("holaaaaaa")}}>Enviar</button>
+            <br/>
+            <button className='comments-button' onClick={() => {onSubmit(); handleClick()}}>Enviar</button>
+            <br/>
         </div>
     )
 }

@@ -27,6 +27,11 @@
   left: -1px;
 }*/
 
+.footer-group, .header-group{
+  display: flex;
+  justify-content: center;
+}
+
 .footer-icon {
   width: 2em;
 } 
@@ -59,10 +64,22 @@
   }
 
 .header-logout{
-  height: 1.5em;
+  height: 1.3em;
   position: absolute;
   width: auto;
   left: 92%;
-  top: 5px;
+  top: 2px;
 } 
+
+.header-up{
+  width: 24.5em; 
+  position: absolute;
+  top: 0;
+}
+
+.footer-down{
+  width: 24.5em; 
+  position: absolute;
+  bottom: 0%;
+}
 

@@ -51,12 +51,13 @@ export default function Profile() {
   }
 
   return (
+    <>
+    <Header />
     <div className='profile-group'>
-      <Header />
       <img
         className='profile-back'
         alt='back icon'
-        src={require('../images/back.png')}
+        src={require('../images/returnTravel.png')}
         onClick={() => navigate(-1)}
       />
       <img
@@ -238,5 +239,6 @@ export default function Profile() {
         </TabContent>
       </div>
     </div>
+    </>
   )
 }
