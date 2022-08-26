@@ -119,16 +119,16 @@ export default function Profile() {
             <div className='profile-personal'>
 
               <label for="first-name" className='profile-label'>Nombre: </label>
-              <input className='profile-input' type="text" id="first-name" name="first-name" value='Amaya' />
+              <input className='profile-input' type="text" id="first-name" name="first-name" value='Dariana' />
 
               <label for="last-name" className='profile-label'>Apellido: </label>
-              <input className='profile-input' type="text" id="last-name" name="last-name" value='De Esesarte' />
+              <input className='profile-input' type="text" id="last-name" name="last-name" value='Quintero' />
 
               <label for="cell" className='profile-label'>Celular: </label>
               <input className='profile-input' type="text" id="cell" name="cell" value='5567386602' />
 
               <label for="mail" className='profile-label'>Correo: </label>
-              <input className='profile-input' type="text" id="mail" name="mail" value='amaya@tcs.com' />
+              <input className='profile-input' type="text" id="mail" name="mail" value='dariana@tcs.com' />
 
               <div className='select-group'>
                 <label for="gender" className='profile-label'>Género: </label>
